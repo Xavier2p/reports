@@ -6,7 +6,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Packages
-\documentclass[11pt,a4paper]{article}
+\documentclass[12pt,a4paper]{article}
 \usepackage{mathtools}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
@@ -17,6 +17,7 @@
 \usepackage{longtable}
 \usepackage[aboveskip=.5cm]{caption}
 \usepackage{pdflscape}
+\usepackage{geometry}
 
 % Global settings of document
 \setlength\parindent{20pt}
@@ -24,27 +25,45 @@
 \newcommand{\AI}{Intelligence Artificielle}
 \newcommand{\CEX}{CarrEniX}
 \pagestyle{fancy}
-\rhead{Bitume Legends}
-\lhead{Cahier des Charge}
+\rhead{\btmlgs}
+\lhead{Cahier des Charges}
+\rfoot{Page \thepage}
+\fancyfoot[C]{}
 
 % Begin of the document
 \begin{document}
 
-\title{Cahier des Charges \\ {\large Projet Bitume Legends}}
-\author{CarrEniX}
-\date{Janvier 2022}
-\maketitle
+\begin{titlepage}
+  \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+  \center
+  \textsc{\LARGE Projet \btmlgs}\\[1cm]
+  \includegraphics[scale=0.7]{Medias/logo192.png} \\[1cm]
+  \HRule \\[0.4cm]
+  { \huge \bfseries Cahier des Charges \\[0.15cm] }
+  \HRule \\[1.5cm]
+  \CEX \\[0.3cm]
+  Anthony CARON\;--\;Melvyn DELAROQUE\\ Victorien CAMBOURIAN\;--\;Xavier de PLACE
+   \\ [6cm]
+  EPITA INFOSUP 2026\\Année 2021 - 2022
+  \end{titlepage}
 
-\begin{center}
-  \includegraphics[width=0.3\textwidth]{Medias/logo192.png}
-\end{center}
-
+% Former title page
+% \title{Cahier des Charges \\ {\large Projet Bitume Legends}}
+% \author{CarrEniX\\ Anthony CARON\;\; Melvyn DELAROQUE\\ Victorien CAMBOURIAN\;\; Xavier de PLACE}
+% \date{Janvier 2022}
+% \maketitle
+% \begin{center}
+%   \includegraphics[width=0.7\textwidth]{Medias/logo192.png}
+% \end{center}
+% \begin{center}
+%   EPITA INFOSUP 2026\\2021 - 2022
+% \end{center}
+% \clearpage
 \tableofcontents
 \clearpage
 
 \section{Introduction}
   % Présentation du groupe
-
   Nous sommes \CEX, le studio de développement de \btmlgs. Notre groupe est composé d'Anthony CARON, 
   Victorien CAMBOURIAN, Melvyn DELAROQUE et Xavier de PLACE. Voici le cahier des charges de notre projet
   de S2, nommé \btmlgs.\\
@@ -81,7 +100,7 @@
   nous sommes mis d'accord sur un jeu de courses plutôt qu'un RPG où les joueurs incarneraient des voitures.
   De plus, un jeu de courses est facilement imaginable avec un mode multijoueur et un mode Intelligence 
   Artificielle. C'était donc un choix qui s'imposait pour nous.\\
-
+  
   \indent Le nom \textit{Bitume Legends} est un jeu de mots sur le jeu de Gameloft, \textit{Asphalt 9 Legends}.
   Nous connaissons tous ce jeu et nous avons décidé de nous inspirer grandement de son nom tout en y intégrant
   une de nos spécialités : les jeux de mots. Le nom de notre team \CEX\, est du même type. Nous avons décidé
@@ -95,7 +114,7 @@
   et un pédalier. Il sera mis à jour par \textit{Gran Track 20}, une version pour deux joueurs.
   En 1986, c'est Sega qui sort sa version du jeu de voiture avec \textit{OutRun}. Le premier 
   jeu de voitures en 3D était \textit{Hard Drivin}, produit par Atari. Le très connu \textit{Mario Kart},
-  développé par Nitendo, est sorti en 1992 sur Super NES.\\
+  développé par Nintendo, est sorti en 1992 sur Super NES.\\
 
   \indent Plus récemment, nous pouvons remarquer plusieurs types de jeux de voitures. Il y a en premier lieu 
   les jeux de simulation comme \textit{Formula One} (un jeu de simulation de Formule 1) ou encore 
@@ -118,13 +137,12 @@
   et pour les années futures à EPITA. Nous avons décider de donner chacun notre avis sur ce projet et sur ce 
   qu'il pourrait nous apporter individuellement.\\
 
-  \textit{Ce projet sera mon tout premier réalisé en groupe sur une aussi grande période de temps. 
+  \indent\textit{Ce projet sera mon tout premier réalisé en groupe sur une aussi grande période de temps. 
     J'aurai l'occasion d'apprendre les côtés positifs et négatifs du travail de groupe afin de mener ce 
     projet à bien. De plus, grand fan de jeux vidéos, j'ai toujours voulu faire mon propre jeux vidéo et ce 
     projet sera l'occasion pour moi de voir ce qui se cache derrière.} \\
-  \indent Anthony\\
-
-  \textit{L'intérêt personnel que j'ai envers le développement d'un jeu de course automobile vient de ma 
+  \indent Anthony\\[0.3cm]
+  \indent\textit{L'intérêt personnel que j'ai envers le développement d'un jeu de course automobile vient de ma 
     passion depuis l'enfance pour ce genre de jeux. En effet, plus jeune et encore aujourd'hui, je joue
     à des jeux de voitures (Need For Speed, Mario Kart ou Asphalt) et je regarde beaucoup de contenu automobile
     à la télévision (Top Gear UK) et sur Youtube (Vilebrequin). C'est un milieu qui mêle à la fois passion et 
@@ -132,17 +150,15 @@
     fait ? L'expérience acquise en travaillant directement sur un projet de développement de jeux vidéoludique 
     permettrait de développer mes compétences à la fois techniques et artistiques et d'apprendre concrètement 
     ce qu'est le travail de groupe en milieu professionnel} \\
-  \indent Melvyn\\
-
-  \textit{Bien que j'aime bien être chef de projet, je trouve qu'il était intéressant 
+  \indent Melvyn\\[0.3cm]
+  \indent\textit{Bien que j'aime bien être chef de projet, je trouve qu'il était intéressant 
     pour moi de me positionner différement, pour pouvoir également voir d'autres façons 
     de cadrer et diriger une équipe. De plus, ce projet va nous permettre de voir les différentes
     méthodes d'approche de résolution des problèmes auxquels nous serons confronté, tout en s'y
     adaptant (lors de la correction des bugs par exemple). Aussi, nous allons devoir être organisés
     et efficaces étant donné que le développement du jeu se fait sur le temps libre en plus de l'école.} \\
-  \indent Victorien\\
-
-  \textit{C'est un projet qui me tient à coeur personnellement. Il va m'apporter de la discipline pour le travail
+  \indent Victorien\\[0.3cm]
+  \indent\textit{C'est un projet qui me tient à coeur personnellement. Il va m'apporter de la discipline pour le travail
     en équipe. Il va aussi me permettre de découvrir un monde que je ne connais pas très bien, celui du jeu vidéo.
     Enfin, Bitume Legends est une occasion unique pour faire un projet presque entièrement libre, donc quelque
     chose dont on peut vraiment être fier.} \\
@@ -219,9 +235,10 @@
       utiliserons Blender pour la partie 3D et GIMP pour le 2D.
     \subsubsection{\AI}
       Notre vision de l'\AI\, est d'implémenter des voitures qui se conduisent toutes seules.
-      Cela servira à faire des courses tout seul contre la machine ou ajouter des \textit{bots} dans le mode 
-      multijoueurs. Nous allons utiliser le mode AI de Unity qui est directement intégré
-      dans notre \textit{framework} de travail.
+      Cela servira à faire des courses seul contre la machine ou ajouter des \textit{bots} dans le mode 
+      multijoueur. Nous nous baserons sur le mode AI de Unity qui est directement intégré
+      dans notre \textit{framework} de travail. Nous rajouternons nos propres fonctions pour obtenir
+      le résultat que nous voulons.
     \subsubsection{Communication}
       Nous utilisons \LaTeX\, pour effectuer nos rapports et notre cahier des charges. Pour notre site web, 
       nous utiliserons Bootstrap Studio. Nous avons un compte Instagram (\texttt{@bitumelegends}) 
@@ -255,17 +272,17 @@
 \renewcommand{\arraystretch}{1.2}
 \setlength{\LTleft}{-1cm plus 1 fill}
 \setlength{\LTright}{-1cm plus 1 fill}
-\begin{longtable}{| p{4cm} || c | c | c | c | c |}
+\begin{longtable}{| p{4.5cm} || c | c | c | c | c |}
   \hline
   Tâches & Période 1 & Période 2 & Période 3 & Responsable & Suppléant\\\hline\hline
-  Multijoueur & 80\% & 95\% & 100\% & Xavier & Victorien \\\hline
+  Multijoueur & 100\% & 100\% & 100\% & Xavier & Victorien \\\hline
   Menu principal & 85\% & 95\% & 100\% & Melvyn & Xavier \\\hline
-  Logique du jeu & 60\% & 95\%  & 100\% & Victorien & Anthony\\\hline
+  Logique du jeu & 100\% & 100\%  & 100\% & Victorien & Anthony\\\hline
   Programme \(\beta\) & 50\% & 75\% & 100\% & Anthony & Melvyn \\\hline
   Site Internet & 50\% & 85\%  & 100\% & Anthony & Victorien\\\hline
   Maps et niveaux & 0\% & 95\%  & 100\% & Victorien & Melvyn\\\hline
-  \AI & 0\% & 95\%  & 100\% & Xavier & Anthony\\\hline
-  Implémentations modes de jeu & 0\% & 95\%  & 100\% & Victorien & Xavier\\\hline
+  \AI & 0\% & 100\%  & 100\% & Xavier & Anthony\\\hline
+  Implémentations modes de jeu & 0\% & 100\%  & 100\% & Victorien & Xavier\\\hline
   Systèmes de gains & 0\% & 10\%  & 100\% & Anthony & Xavier\\\hline
   \textit{Sound Design} & 10\% & 45\% & 100\% & Melvyn & Victorien\\\hline
   Musiques & 10\% & 45\%  & 100\% & Melvyn & Anthony \\\hline
@@ -281,8 +298,6 @@
   Wikipédia (2021), \emph{Jeu Vidéo de Course} \\
   \url{https://fr.wikipedia.org/wiki/Jeu_video_de_course}\\
 
-  Blaise Huchet (2020), \emph{20 jeux de voitures qui ont marqué l'histoire}\\
-  \url{https://fr.motor1.com/features/408752/top-20-jeux-video-voitures/}
 \end{thebibliography}
 
 \begin{center}
