@@ -18,15 +18,17 @@
 \usepackage[aboveskip=.5cm]{caption}
 \usepackage{pdflscape}
 \usepackage{geometry}
+% this package can be remove if the frames are on export.
+\usepackage{hyperref}
 
 % Global settings of document
 \setlength\parindent{20pt}
 \newcommand{\btmlgs}{\textit{Bitume Legends}}
 \newcommand{\AI}{Intelligence Artificielle}
-\newcommand{\CEX}{CarrEniX}
+\newcommand{\CEX}{\textsc{CarrEniX}}
 \pagestyle{fancy}
 \rhead{\btmlgs}
-\lhead{Rapport de Soutenance 1}
+\lhead{Rapport de Première Soutenance}
 \rfoot{Page \thepage}
 \fancyfoot[C]{}
 \setlength{\headheight}{15pt}
@@ -35,144 +37,316 @@
 \begin{document}
 
 \begin{titlepage}
-  \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
-  \center
-  \text{\LARGE Projet \btmlgs}\\[1cm]
-  \includegraphics[scale=0.7]{../Medias/logo192.png} \\[1cm]
-  \HRule \\[0.4cm]
-  { \huge \bfseries Rapport de Soutenance 1\\[0.15cm] }
-  \HRule \\[1.5cm]
-  {\large \bfseries \CEX} \\[0.3cm]
-  Anthony CARON\;--\;Melvyn DELAROQUE\\ Victorien CAMBOURIAN\;--\;Xavier de PLACE
-   \\ [6cm]
-  EPITA INFOSUP 2026\\Année 2021 - 2022
-  \end{titlepage}
+    \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+    \center
+    \text{\LARGE Projet \btmlgs}\\[1cm]
+    add image
+    %   \includegraphics[scale=0.7]{../Medias/logo192.png} \\[1cm]
+    \HRule \\[0.4cm]
+    { \huge \bfseries Rapport de Première Soutenance\\[0.3cm] }
+    \HRule \\[1.5cm]
+    {\large \bfseries \CEX} \\[0.3cm]
+    Anthony CARON\;--\;Melvyn DELAROQUE\\ Victorien CAMBOURIAN\;--\;Xavier de PLACE
+    \\ [6cm]
+    EPITA INFOSUP 2026\\Année 2021 - 2022\\
+    \(\mathtt{\href{https://btms.games/}{btms.games}}\)
+\end{titlepage}
 
 \tableofcontents
 \clearpage
 
 \section{Introduction}
-  Logoden biniou degemer mat an penn ar bed kenavo, kilpenn kador feiz gwengolo 
-  mel goulenn kaer c’higer etre, bezh benn arc’h outo amzer divjod vouezh. Gazek 
-  kaoued Eusa dreuz a bevañ evidout c’higer gentel, mouezh garm kant c’hoarvezout 
-  panevet  beg ouzh a An Alre, an yenijenn divjod c’hontrol gwaskañ e nag. Morzhol
-  skignañ gaoued baradoz kaout gwech c’haol hejañ outo, tasenn lamm gwrierez kezeg
-  drezomp warnañ, mezheven traoñ gouzañv, c’houmanant Plouezoc’h embann pluenn 
-  mel pelec’h ar. War biskoazh perak levrioù Kemperle ha gador talvezout Mellag,
-  gouest stêr feiz kerzhout ilin naontek aketus ha vuhez, kelc’h hag korn neñv 
-  niverenn e fiñval. Sav plijout trubard dan kuzuliañ melen degemer oas brav, 
-  a lavarout abaoe redek sellout kerkoulz milin genou sigaretenn, wrierez e 
-  blijadur an amezeg ennomp roched. Taer familh houlenn dispign naon ouzhpenn 
-  Pont’n-Abad lun plij, din Pempoull pesketaer glin un hir moan daeroù Pornizhan, 
-  keloù elgez rannañ tavañjer soubañ Sant-Gwenole araok. Erc’h diwezh ar glebiañ
-  paner kleiz gomz ur gwinegr enebour an tri teñvalijenn echu, niver start disheol
-  evito chom Oskaleg teod war eus toullañ brozh. Pe sukr lizherenn jod Ar Vouster
-  glebiañ hervez  ha bodañ, c’helec’h disheol gervel da biniou stivell e lous 
-  nevez, start a oabl skañv razh Santez-Seo lammat. Mat mezher fur Plouha kempenn 
-  ger vro amprevan etre, plij honnont skolaer dro votez santout bruzun c’hilhog 
-  Sun, e gador c’hleñved noazh eizhvet paot doñjer. Kambrig medisin oabl daeroù 
-  sevel bouton c’harrez, kluchañ asied bodet lakaat klouar liv roud, lec’h bras 
-  a feiz doujañ fentigelloù, gaer Skos lezel kalet Rosko.
+Nous sommes le studio CarrEnix qui développe \btmlgs, un jeu de course 3D réaliste en
+\textit{low-poly}. Après avoir commencé le projet début janvier, nous publions notre 
+premier rapport. Il permet de faire le point sur ce que nous avons fait, les objectifs
+atteints, les priorités ainsi que les ressources utilisés durant ce projet. Dans ce rapport,
+nous allons aborder l'avancée de notre projet, l'organisation de notre groupe, les 
+ressources et créations de chacun des membres du groupe ainsi que leurs valeurs 
+ajoutées, le ressenti des membres durant cette première période ainsi que nos objectifs.
+
+
 
 \section{Avancée du Projet}
-  Logoden biniou degemer mat an penn ar bed kenavo, kilpenn kador feiz gwengolo 
-  mel goulenn kaer c’higer etre, bezh benn arc’h outo amzer divjod vouezh. Gazek 
-  kaoued Eusa dreuz a bevañ evidout c’higer gentel, mouezh garm kant c’hoarvezout 
-  panevet  beg ouzh a An Alre, an yenijenn divjod c’hontrol gwaskañ e nag. Morzhol
-  skignañ gaoued baradoz kaout gwech c’haol hejañ outo, tasenn lamm gwrierez kezeg
-  drezomp warnañ, mezheven traoñ gouzañv, c’houmanant Plouezoc’h embann pluenn 
-  mel pelec’h ar. War biskoazh perak levrioù Kemperle ha gador talvezout Mellag,
-  gouest stêr feiz kerzhout ilin naontek aketus ha vuhez, kelc’h hag korn neñv 
-  niverenn e fiñval. Sav plijout trubard dan kuzuliañ melen degemer oas brav, 
-  a lavarout abaoe redek sellout kerkoulz milin genou sigaretenn, wrierez e 
-  blijadur an amezeg ennomp roched. Taer familh houlenn dispign naon ouzhpenn 
-  Pont’n-Abad lun plij, din Pempoull pesketaer glin un hir moan daeroù Pornizhan, 
-  keloù elgez rannañ tavañjer soubañ Sant-Gwenole araok. Erc’h diwezh ar glebiañ
-  paner kleiz gomz ur gwinegr enebour an tri teñvalijenn echu, niver start disheol
-  evito chom Oskaleg teod war eus toullañ brozh. Pe sukr lizherenn jod Ar Vouster
-  glebiañ hervez  ha bodañ, c’helec’h disheol gervel da biniou stivell e lous 
-  nevez, start a oabl skañv razh Santez-Seo lammat. Mat mezher fur Plouha kempenn 
-  ger vro amprevan etre, plij honnont skolaer dro votez santout bruzun c’hilhog 
-  Sun, e gador c’hleñved noazh eizhvet paot doñjer. Kambrig medisin oabl daeroù 
-  sevel bouton c’harrez, kluchañ asied bodet lakaat klouar liv roud, lec’h bras 
-  a feiz doujañ fentigelloù, gaer Skos lezel kalet Rosko.
+    \subsection{Multijoueur}
+    \subsection{Programme Beta}
+    \subsection{Site Internet}
+    \subsection{Menu}
+
+        (fonctions principales)\\
+        (design)
+        Là, Melvyn et Victorien ont commencé à travailler un design plus poussé que celui de base d'unity, en adoptant notamment un thème de couleur basé sur le logo du jeu.
+        Tout d'abord une ébauche du design a été réalisée sur Canva, dans le but de partager des idées sur le look final du menu.
+        Ensuite nous avons implémenté le design dans le jeu, en repositionnant les boutons, insérant un fond et des espaces pour les futures fonctionnalités. Nous avons également implémenté le code couleur du design.
+        Nous avons également ajouté des effets sonores et de couleurs aux boutons.
+
+\clearpage
 
 \section{Organisation de notre Groupe}
-  Nous nous sommes basés sur ce que nous avions annoncé dans notre Cahier des 
-  Charges.
-  Melvyn s'est occupé des musiques d'ambiance, du \textit{Sound Design} de 
-  notre jeu et du menu principal. Victorien a créé le premier circuit du jeu,
-  il a implémenté le menu principal et a modélisé sur Blender la F1. Anthony a
-  géré le site Internet, les réseaux sociaux et le programme de \(\beta\).
-  Enfin, Xavier a implémenté le mode multijoueur, et le cœur du moteur de jeu,
-  à savoir le système de direction des voitures.
+    \subsection{Organisation pratique}
+    Ensuite, il nous a fallu mettre en place une organisation particulière 
+    entre nous, car au début nous ne savions pas spécialement par où commencer.
+    Chaque semaine, Nous nous sommes réunis des réunions, définissant des 
+    objectifs pour chacun, à faire durant la semaine suivante. Cela nous 
+    a permis d’avoir des buts sur le court terme et d'avancer plus 
+    efficacement.
 
-\section{Ressources}
-  Logoden biniou degemer mat an penn ar bed kenavo, kilpenn kador feiz gwengolo 
-  mel goulenn kaer c’higer etre, bezh benn arc’h outo amzer divjod vouezh. Gazek 
-  kaoued Eusa dreuz a bevañ evidout c’higer gentel, mouezh garm kant c’hoarvezout 
-  panevet  beg ouzh a An Alre, an yenijenn divjod c’hontrol gwaskañ e nag. Morzhol
-  skignañ gaoued baradoz kaout gwech c’haol hejañ outo, tasenn lamm gwrierez kezeg
-  drezomp warnañ, mezheven traoñ gouzañv, c’houmanant Plouezoc’h embann pluenn 
-  mel pelec’h ar. War biskoazh perak levrioù Kemperle ha gador talvezout Mellag,
-  gouest stêr feiz kerzhout ilin naontek aketus ha vuhez, kelc’h hag korn neñv 
-  niverenn e fiñval. Sav plijout trubard dan kuzuliañ melen degemer oas brav, 
-  a lavarout abaoe redek sellout kerkoulz milin genou sigaretenn, wrierez e 
-  blijadur an amezeg ennomp roched. Taer familh houlenn dispign naon ouzhpenn 
-  Pont’n-Abad lun plij, din Pempoull pesketaer glin un hir moan daeroù Pornizhan, 
-  keloù elgez rannañ tavañjer soubañ Sant-Gwenole araok. Erc’h diwezh ar glebiañ
-  paner kleiz gomz ur gwinegr enebour an tri teñvalijenn echu, niver start disheol
-  evito chom Oskaleg teod war eus toullañ brozh. Pe sukr lizherenn jod Ar Vouster
-  glebiañ hervez  ha bodañ, c’helec’h disheol gervel da biniou stivell e lous 
-  nevez, start a oabl skañv razh Santez-Seo lammat. Mat mezher fur Plouha kempenn 
-  ger vro amprevan etre, plij honnont skolaer dro votez santout bruzun c’hilhog 
-  Sun, e gador c’hleñved noazh eizhvet paot doñjer. Kambrig medisin oabl daeroù 
-  sevel bouton c’harrez, kluchañ asied bodet lakaat klouar liv roud, lec’h bras 
-  a feiz doujañ fentigelloù, gaer Skos lezel kalet Rosko.
-\section{Ressenti de chacun}
-  \indent\textit{Ce projet sera mon tout premier réalisé en groupe sur une aussi 
-  grande période de temps. J'aurai l'occasion d'apprendre les côtés positifs et 
-  négatifs du travail de groupe afin de mener ce projet à bien. De plus, grand
-  fan de jeux vidéos, j'ai toujours voulu faire mon propre jeux vidéo et ce 
-  projet sera l'occasion pour moi de voir ce qui se cache derrière.} \\
-  \indent Anthony\\[0.3cm]
-  \indent\textit{L'intérêt personnel que j'ai envers le développement d'un jeu 
-  de course automobile vient de ma passion depuis l'enfance pour ce genre de 
-  jeux. En effet, plus jeune et encore aujourd'hui, je joue à des jeux de 
-  voitures (Need For Speed, Mario Kart ou Asphalt) et je regarde beaucoup 
-  de contenu automobile à la télévision (Top Gear UK) et sur Youtube 
-  (Vilebrequin). C'est un milieu qui mêle à la fois passion et mentalité 
-  d'ingénieur, vu qu'elle permet de répondre à la question : comment ces 
-  jeux que j'adore ont été fait ? L'expérience acquise en travaillant 
-  directement sur un projet de développement de jeux vidéoludique 
-  permettrait de développer mes compétences à la fois techniques et 
-  artistiques et d'apprendre concrètement ce qu'est le travail de groupe en 
-  milieu professionnel} \\
-  \indent Melvyn\\[0.3cm]
-  \indent\textit{Bien que j'aime bien être chef de projet, je trouve qu'il était 
-  intéressant pour moi de me positionner différement, pour pouvoir également voir 
-  d'autres façons de cadrer et diriger une équipe. De plus, ce projet va nous
-  permettre de voir les différentes méthodes d'approche de résolution des 
-  problèmes auxquels nous serons confronté, tout en s'y adaptant (lors de la 
-  correction des bugs par exemple). Aussi, nous allons devoir être organisés
-  et efficaces étant donné que le développement du jeu se fait sur le temps 
-  libre en plus de l'école.} \\
-  \indent Victorien\\[0.3cm]
-  \indent\textit{C'est un projet qui me tient à coeur personnellement. Il 
-  va m'apporter de la discipline pour le travail en équipe. Il va aussi me 
-  permettre de découvrir un monde que je ne connais pas très bien, celui du 
-  jeu vidéo. Enfin, Bitume Legends est une occasion unique pour faire un projet 
-  presque entièrement libre, donc quelque chose dont on peut vraiment être fier.} \\
-  \indent Xavier
+    \subsection{Organisation personnelle}
+    Pour les objectifs, nous nous 
+    sommes basés sur ce que nous avions annoncé dans notre Cahier des 
+    Charges :
+    Melvyn s'est occupé des musiques d'ambiance, du \textit{Sound Design} de 
+    notre jeu et du menu principal. Victorien a créé le premier circuit du jeu,
+    il a implémenté le menu principal et a modélisé sur Blender la F1. Anthony a
+    géré le site Internet, les réseaux sociaux et le programme \(\beta\).
+    Enfin, Xavier a implémenté le mode multijoueur, et le cœur du moteur de jeu,
+    à savoir le système de direction des voitures.\\
+    {\bfseries Ajouter ici ce que chacun a fait en perso}
+
+\subsubsection{Melvyn}
+Étant responsable du \textit{sound-design} et de la musique, j'ai composé la 
+musique du jeu. J'ai utilisé le logiciel de MAO (Musique Assistée par Ordinateur) 
+\textit{FL Studio 20}. J'ai composé deux musiques, une musique pour le menu et 
+une musique de course et j'ai demandé à un ami d'enregistrer sa voix pour la musique dans 
+un studio d'enregistrement de son école. Le style choisi par mes pairs et 
+moi-même au sein du groupe est la Phonk.\\
+La phonk est un genre de Trap rapide de 160 battements par minutes et très énergique. 
+Ce genre est connu pour ses samples (extraits musicaux) de voix tirés de morceaux du
+rap de Memphis. Des basses et des percussions puissantes sont également nécessaires, 
+ainsi que l'usage de la \textit{cowbell} (percussion reprenant les cloches 
+autour du cou des vaches) venant de la \textit{Roland TR-808}, 
+une boîte à rythme mémorable de la culture hip-hop. 
+Ce style est souvent associé à la culture automobile \textit{underground} 
+japonaise, d'où le désir d'utiliser de la phonk pour notre jeu.
+
+\subsubsection{Victorien}
+Étant donné que nous créons un jeu de voiture, il était 
+bienvenu de modéliser au moins une voiture par nos propres soins. 
+Victorien, ayant des connaissances dans \textit{Blender}, un logiciel 
+de modélisation 3D, s'en est donc chargé. 
+Nous avons convenu d'une formule 1, voiture considéré comme "Graal" du jeux. 
+Les formes de la voiture ont toutes été créées à partir de formes basiques,
+telles que des rectangles, des cylindres, des sphères ou encore des cubes. 
+Ensuite, il ne restait qu'à jouer avec les formes : les étirer, 
+redimensionner une face pour que les formes correspondent avec une Formule 1. 
+Etant donné que le design est en \textit{low-poly}, nous avons rajouter des. % répétition de étant donné
+faces à certaines formes. Par exemple, avec 26 rectangles verticaux collés les 
+uns aux autres, on peut former un cylindre.
+Pour essayer d'être réaliste, nous avons regarder une 
+vidéo présentant une formule 1 avec ses détails telles que le volant, 
+les suspensions, les ailerons et moustaches de la voiture.
+
+\subsubsection{Anthony}
+\textbf{TODO}
+
+
+\subsubsection{Xavier}
+\textbf{TODO}
+
+
+
 \clearpage
+\section{Ressources Utilisées}
+\subsection{Collaboration}
+La création de jeux en solo ne demande pas de partage de données, contrairement 
+à celle en équipe. Nous avions besoin d'un endroit de collaboration où nous 
+pourrions nous échanger les fichiers relatifs au jeu. 
+Nous avons donc créé un ensemble de \textit{repositeries} sur \textit{Github}
+\footnote{\(\mathtt{\href{https://github.com/Bitume-Legends-Crew}{github.com/Bitume-Legends-Crew}}\)},
+répartis dans une organisation, chacun pour un usage bien spécifique.
+Le premier est donc le \textit{repo} de notre jeu, nommé \textit{game}, et qui
+contient le projet au format Unity et des dossiers contenants les différents 
+assets et autres ressources, nécessaires à l'execution du jeu. 
+Le second est un \textit{repo} consacré exclusivement aux différents rapports 
+que nous devons fournir. Il est composé à 99\% de .\TeX\, et 1\% de \(\mathtt{.pdf}\).
+Et le dernier est celui dédié à notre site Internet, qui posssède une double
+fonction : il nous permet de collaborer sur le site mais aussi de l'héberger 
+grâce à \textit{GitHub Pages}.\\
+Ainsi, nous pouvons toujours être à jour sur la bonne version du jeu,
+du site ou des rapports, tout en étant géographiquement à distance les uns 
+des autres.
+
+\subsection{Communication}
+Pour communiquer entre nous et avec notre public de \(\beta\)-testeurs, nous
+avons créé un serveur Discord \footnote{\(\mathtt{\href{https://discord.
+gg/5NR43GHUBD}{discord.gg/5NR43GHUBD}}\)} découpé en multiples 
+\textit{channels}, ayant chacun une mission précise pour ne pas mélanger les
+informations. Ce serveur est aussi le lieu de nos réunions hebdomadaires 
+(ou plus fréquemment en cas de soutenance).
+
+\subsection{3D}
+Comme moteur de jeu, nous avons utilisé \textit{Unity} pour sa simplicité de prise en main 
+et une fonctionnalité très utile : l'\textit{Asset Store}. C'est une plateforme où nous pouvons 
+acheter ou utiliser gratuitement des ressources telles que des bâtiments, des voitures ainsi
+que des personnages. En plus de l'utilisation de l'\textit{Asset Store} pour 
+notre première voiture, 
+nous avons aussi utilisé \textit{Blender}, logiciel de modélisation 3D. 
+Il nous a permi entre autres de créer une voiture qui sera utilisée et 
+implémentée plus tard dans le jeu. 
+
+\clearpage
+
+\subsection{Musique}
+La musique a été composée sur \textit{FL Studio 20} logiciel de MAO
+très ludique et permissif. Le processus d'élaboration a commencé par
+l'écriture de la mélodie principale. Ensuite vient le travail des percussions
+(cruciales pour la phonk) représentant 70\% du travail total.
+Nous avons travaillé sur le \textit{mixing} et le \textit{leveling},
+procédés de travail du volume, de la stéréo et d'effets de spacialisation 
+du son. Cette étape représente la deuxième partie la plus importante de la 
+composition, afin de donner une bonne qualité sonore à la musique.
+Enfin, l'arrangement et le mastering permettant pour l'un, une 
+structure cohérente de la musique et pour l'autre, de légères retouches
+sonores faisant toute la différence. Cette dernière partie du processus 
+est la plus lente mais celle sur laquelle on peut exprimer sa créativité,
+car c'est ici que l'on peut l'on peut travailler sur des variations, 
+des transitions et ajouter du punch.
+
+\subsection{Site Internet}
+Pour réaliser le site Internet, nous avons choisi d'utiliser \textit{Bootstrap 
+Studio 5} afin de limiter le développement en HTML et CSS. \textit{Bootstrap 
+Studio} est une application de conception de site Web très puissante,
+nous pouvons choisir des structures déja prédéfinies comme des colonnes
+et des lignes puis y ajouter ce que l'on souhaite, notamment des boutons, 
+des images, des liens, du texte... Enfin, \textit{Bootstrap Studio} nous 
+propose de personnaliser ces derniers éléments en modifiant leurs styles 
+et leur place afin de limiter l'usage du CSS. Nous sommes quand même passé 
+par le HTML pour customiser plus profondément certains éléments de notre site,
+comme par exemple les boutons. C'est alors qu'intervient l'éditeur de texte
+\textit{Visual Studio Code} dans lequel nous avons exporté le code généré 
+par Bootstrap et intégré les propriétés manquantes à chaque bouton. 
+Pour mettre en ligne le site une fois terminé, nous avos utilisé
+la solution \textit{GitHub Pages} pour l'hébergement. Nous avons raccordé
+le nom de domaine à notre \textit{repository} puis nous avons configuré
+les \textit{DNS} (le système qui permet à un site web d'être visible sur
+Internet) pour que tout fonctionne bien.
+
+\subsection{IDE}
+Pour écrire notre code en C\#, nous utilisons l'IDE \textit{Rider} de 
+\textit{JetBrains}. Il possède une bonne intégration de Unity, et nous
+y sommes bien habitué, c'est celui que nous utilisons au quotidien pour
+nos TP de programmation. Pour faire certains tests, très précis et qui
+ne nécessitent pas de beaucoup de ressources, nous utilisons \textit{Vim}
+directement dans notre terminal.
+Pour collaborer sur le rapport et les autres documents en \LaTeX\, 
+pour éviter de désigner un "esclave \LaTeX", nous utilisons le site 
+\textit{Overleaf}\footnote{\(\mathtt{\href{https://www.overleaf.com/}
+{overleaf.com}}\)}. À la manière d'un document en ligne, un Google Docs
+ou autre, nous pouvons écrire en simultané et compléter à quatre cerveaux
+les documents demandés.
+
+\clearpage
+
+\section{Ressenti de chacun}
+\subsection{Anthony}
+\textit{L’organisation du travail au sein du groupe était plutôt bonne.
+    Dès le début, nous avons créé un GitHub afin de partager notre travail 
+    effectué ainsi qu’un Discord pour se mettre d’accord sur les différentes 
+    deadlines à propos du travail à effectué chaque semaine. Ainsi nous 
+    effectuons toutes les semaines, des réunions en vocal, dans le but 
+    d’expliquer aux autres membres du groupe ce que l’on a fait dans la 
+    semaine. A propos du site web, j’ai eu du mal à manipuler Bootstrap Studio 
+    du fait du manque de tutoriaux pour apprendre à utiliser Bootstrap Studio
+    sans de développement en HTML. J’ai donc dû apprendre comment fonctionne 
+    ce logiciel et après avoir réalisé que le principe était de mettre tous 
+    les éléments liés dans une seule colonne, Bootstrap est devenu toute de 
+suite très facile et m’a permis de réaliser rapidement le site web.}
+
+\subsection{Melvyn}
+\textbf{TODO}
+\textit{L'intérêt personnel que j'ai envers le développement d'un jeu 
+    de course automobile vient de ma passion depuis l'enfance pour ce genre de 
+    jeux. En effet, plus jeune et encore aujourd'hui, je joue à des jeux de 
+    voitures (Need For Speed, Mario Kart ou Asphalt) et je regarde beaucoup 
+    de contenu automobile à la télévision (Top Gear UK) et sur Youtube 
+    (Vilebrequin). C'est un milieu qui mêle à la fois passion et mentalité 
+    d'ingénieur, vu qu'elle permet de répondre à la question : comment ces 
+    jeux que j'adore ont été fait ? L'expérience acquise en travaillant 
+    directement sur un projet de développement de jeux vidéoludique 
+    permettrait de développer mes compétences à la fois techniques et 
+    artistiques et d'apprendre concrètement ce qu'est le travail de groupe en 
+milieu professionnel}
+
+\subsection{Victorien}
+\textit{Quelques années auparavant, j’avais déjà créé un jeux-vidéo 
+    sur un autre moteur de jeux, \textit{Unreal Engine} de \textit{Epic Games}. 
+    Je n’avait cependant pas eu à coder car il suffisait de créer des
+    \textit{Blueprints} (élements de code préfabriqués qu’il faut relier 
+    entre eux). De plus, c’était un jeu développé en solo, pas en équipe.
+    Je ne savais pas spécialement par quoi commencer au vu de ce que l’on
+    avait prévu. Après avoir fixé des objectifs hebdomadaires grâce aux 
+    réunions, les choses étaient cadrées et j’ai pu être plus efficace sur
+    le développement du jeu. Il a fallu également faire attention à notre 
+    emploi du temps. Bien qu’il y eût les vacances pour avancer, il y avait 
+    à la rentrée les Midterms et 5 jours plus tard première soutenance. 
+Nous devions être organisé et voir plus loin que la semaine suivante.}
+
+\subsection{Xavier}
+\textbf{TODO}
+\textit{C'est un projet qui me tient à coeur personnellement. Il 
+    va m'apporter de la discipline pour le travail en équipe. Il va aussi me 
+    permettre de découvrir un monde que je ne connais pas très bien, celui du 
+    jeu vidéo. Enfin, Bitume Legends est une occasion unique pour faire un projet 
+presque entièrement libre, donc quelque chose dont on peut vraiment être fier.}
+\clearpage
+
+\section{Objectifs pour la suite}
+\subsection{Finir le menu}
+Le menu principal du jeu est presque fini, il nous manque un onglet 
+pour les paramètres du jeu et il faut que nous relions les autres
+fonctions du jeu tel que le mode \textit{timer} ou le mode \textit{vs \AI}.
+Ensuite, nous devrons mettre au point le menu \textit{Player}, en rajoutant 
+la possibilité de voir son niveau, de modifier son nom, etc.
+
+\subsection{Finir le site Web}
+Le site web est bien avancé, mais il nous manque certains éléments 
+comme la fin de la chronologie, la page de téléchargement avec les liens,
+ou encore deux trois bugs concernant l'affichage.
+
+\subsection{Continuer les musiques}
+
+\subsection{Implem l'\AI}
+\subsection{Gamplay}
+
+Logoden biniou degemer mat an penn ar bed kenavo, kilpenn kador feiz gwengolo 
+mel goulenn kaer c’higer etre, bezh benn arc’h outo amzer divjod vouezh. Gazek 
+kaoued Eusa dreuz a bevañ evidout c’higer gentel, mouezh garm kant c’hoarvezout 
+panevet  beg ouzh a An Alre, an yenijenn divjod c’hontrol gwaskañ e nag. Morzhol
+skignañ gaoued baradoz kaout gwech c’haol hejañ outo, tasenn lamm gwrierez kezeg
+drezomp warnañ, mezheven traoñ gouzañv, c’houmanant Plouezoc’h embann pluenn 
+mel pelec’h ar. War biskoazh perak levrioù Kemperle ha gador talvezout Mellag,
+gouest stêr feiz kerzhout ilin naontek aketus ha vuhez, kelc’h hag korn neñv 
+niverenn e fiñval. Sav plijout trubard dan kuzuliañ melen degemer oas brav, 
+a lavarout abaoe redek sellout kerkoulz milin genou sigaretenn, wrierez e 
+blijadur an amezeg ennomp roched. Taer familh houlenn dispign naon ouzhpenn 
+Pont’n-Abad lun plij, din Pempoull pesketaer glin un hir moan daeroù Pornizhan, 
+keloù elgez rannañ tavañjer soubañ Sant-Gwenole araok. Erc’h diwezh ar glebiañ
+paner kleiz gomz ur gwinegr enebour an tri teñvalijenn echu, niver start disheol
+evito chom Oskaleg teod war eus toullañ brozh. Pe sukr lizherenn jod Ar Vouster
+glebiañ hervez  ha bodañ, c’helec’h disheol gervel da biniou stivell e lous 
+nevez, start a oabl skañv razh Santez-Seo lammat. Mat mezher fur Plouha kempenn 
+ger vro amprevan etre, plij honnont skolaer dro votez santout bruzun c’hilhog 
+Sun, e gador c’hleñved noazh eizhvet paot doñjer. Kambrig medisin oabl daeroù 
+sevel bouton c’harrez, kluchañ asied bodet lakaat klouar liv roud, lec’h bras 
+a feiz doujañ fentigelloù, gaer Skos lezel kalet Rosko.
+
+\section{Conclusion}
+En conclusion, ..........SUITE A FAIRE
+paner kleiz gomz ur gwinegr enebour an tri teñvalijenn echu, niver start disheol
+evito chom Oskaleg teod war eus toullañ brozh. Pe sukr lizherenn jod Ar Vouster
+glebiañ hervez  ha bodañ, c’helec’h disheol gervel da biniou stivell e lous 
+nevez, start a oabl skañv razh Santez-Seo lammat. Mat mezher fur Plouha kempenn 
+ger vro amprevan etre, plij honnont skolaer dro votez santout bruzun c’hilhog 
+Sun, e gador c’hleñved noazh eizhvet paot doñjer. Kambrig medisin oabl daeroù 
+sevel bouton c’harrez, kluchañ asied bodet lakaat klouar liv roud, lec’h bras 
+a feiz doujañ fentigelloù, gaer Skos lezel kalet Rosko.
 
 \begin{thebibliography}{9}
-  
+
 \end{thebibliography}
-  
+
 \begin{center}
-  Made with $\heartsuit$ by \CEX\, on \LaTeX.\\
-  \textcopyright\, 2021-2022 \btmlgs
+    Made with $\heartsuit$ by \CEX\, on \LaTeX.\\
+    \textcopyright\, 2021-2022 \btmlgs\\
+    \(\mathtt{\href{https://btms.games/}{btms.games}}\)
 \end{center}
-\clearpage
 \end{document}
