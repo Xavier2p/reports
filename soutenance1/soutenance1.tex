@@ -18,8 +18,6 @@
 \usepackage[aboveskip=.5cm]{caption}
 \usepackage{pdflscape}
 \usepackage{geometry}
-% this package can be remove if the frames are on export.
-\usepackage{hyperref}
 
 % Global settings of document
 \setlength\parindent{20pt}
@@ -35,6 +33,7 @@
 \setlength{\headheight}{15pt}
 \geometry{textheight=600pt}
 \renewcommand{\listfigurename}{Table des Annexes}
+\renewcommand{\contentsname}{Table des Matières}
 
 % Begin of the document
 \begin{document}
@@ -52,7 +51,7 @@
     Victorien \textsc{Cambourian}\;--\;Xavier \textsc{de Place}
     \\ [6cm]
     EPITA INFOSUP 2026\\Année 2021 - 2022\\
-    \(\mathtt{\href{https://btms.games/}{btms.games}}\)
+    \(\mathtt{btms.games}\)
 \end{titlepage}
 
 \tableofcontents
@@ -68,8 +67,6 @@
     ressources et créations de chacun des membres du groupe ainsi que leurs valeurs 
     ajoutées, le ressenti des membres durant cette première période et nos objectifs.
   
-\clearpage
-  
 \section{Avancée du Projet}
     \subsection{Multijoueur}
         La base du multijoueur a été implémentée, non sans peines. 
@@ -79,7 +76,7 @@
         Une musique de jeu a également été crée pour le multijoueur.
   
     \subsection{Programme Beta (\(\beta\))}
-        Nous avons créé un questionnaire sur \textsl{Google Docs} afin que les premières personnes testant
+        Nous avons créé un questionnaire sur \textsl{Google Forms} afin que les premières personnes testant
         le jeu puisse nous signaler les bugs qu'ils ont rencontrés et nous les décrire le plus 
         précisement possible dans le but d'être corrigé rapidement. Pour cela, ce questionnaire 
         possède pour trois catégories. Tout d'abord, une question sur le mode de jeu où le bug 
@@ -90,7 +87,7 @@
   
     \subsection{Communication}
         Au sujet de la communication, nous avons décidé de faire une publication sur \textsl{Instagram}
-        \footnote{\(\mathtt{\href{https://www.instagram.com/bitumelegends/}{instagram.com/bitumelegends}}\)}
+        \footnote{\(\mathtt{instagram.com/bitumelegends}\)}
         pour tenir informés nos potentiels premiers joueurs. Dans cette publication se trouve le lien 
         du site Internet où l'utilisateur pourra consulter se familiariser avec le menu de notre
         jeu, puisque le site reprend l'esthétique de ce dernier. Enfin l'onglet de la réalisation
@@ -99,7 +96,13 @@
         programme de tests.
   
     \subsection{Site Internet}
-        \textbf{\textsc{Todo Anthony}}
+        Le site web a pour but de présenter les membres du groupe, leur rôle et leur avis sur le projet.
+        Il présente aussi l'historique avec les idées de conception du jeu, du nom du jeu et celui du studio
+        de développement. Ensuite, il nous permet d'expliquer comment nous avons réalisé le projet avec la
+        chronolgie de réalisation, c'est-à-dire les différentes étapes de réalisation du projet mais aussi
+        les problèmes rencontrés et les solutions envisagées. Enfin, il contient aussi
+        un espace dédié pour télécharger le projet et le jeu. Ce site est notre vitrine, il nous permet de faire
+        la promotion de \btmlgs.
   
   
   
@@ -139,6 +142,27 @@
         Enfin, Xavier a implémenté le mode multijoueur, et le cœur du moteur de jeu,
         à savoir le système de direction des voitures.
 
+    \subsubsection{Anthony}
+        Pour le site Web, nous avons décidé de reprendre l'esthétique du
+        menu de notre jeu vidéo. Pour cela, nous avons divisé le site web 
+        en quatre parties, accessibles par quatre boutons amenant aux quatre 
+        sous-pages de notre site. La première est la présentation du projet, dans laquelle
+        nous avons écrit une courte introduction, l'historique et les membres
+        de l'équipe. La seconde concerne la réalisation du projet, qui contient
+        la chronologie de la réalisation, les problèmes rencontrés et solutions
+        envisagées pour contrer ceux-ci. Ensuite, une troisième page nous 
+        offre des liens de téléchargement du jeu pour Windows et macOS, et
+        le projet en version complète ou allégée.
+        Enfin, la dernière page permet l'accès aux différentes ressources
+        (liens des images, sons, logiciels...). C'est une sorte de bibliothèque 
+        des sources de notre projet.
+        Ainsi, il me manquera plus qu'à faire fonctionner certains boutons et 
+        liens et rendre le site responsive, c'est a dire un site qui s'adpate en 
+        fonction de l'appareil depuis lequel on le consulte, et 
+        règler quelques bugs d'affichages pour finaliser le site Web. 
+    
+\clearpage
+
     \subsubsection{Melvyn}
         Étant responsable de la musique, j'ai composé la 
         musique du jeu. J'ai utilisé le logiciel de MAO (Musique Assistée par Ordinateur) 
@@ -171,25 +195,6 @@
         vidéo présentant une Formule 1 avec ses détails telles que le volant, 
         les suspensions, les ailerons et les moustaches de la voiture.
 
-    \subsubsection{Anthony}
-        Pour le site Web, nous avons décidé de reprendre l'esthétique du
-        menu de notre jeu vidéo. Pour cela, nous avons divisé le site web 
-        en quatre parties, accessibles par quatre boutons amenant aux quatre 
-        sous-pages de notre site. La première est la présentation du projet, dans laquelle
-        nous avons écrit une courte introduction, l'historique et les membres
-        de l'équipe. La seconde concerne la réalisation du projet, qui contient
-        la chronologie de la réalisation, les problèmes rencontrés et solutions
-        envisagées pour contrer ceux-ci. Ensuite, une troisième page nous 
-        offre des liens de téléchargement du jeu pour Windows et macOS, et
-        le projet en version complète ou allégée.
-        Enfin, la dernière page permet l'accès aux différentes ressources
-        (liens des images, sons, logiciels...). C'est une sorte de bibliothèque 
-        des sources de notre projet.
-        Ainsi, il me manquera plus qu'à faire fonctionner certains boutons et 
-        liens et rendre le site responsive, c'est a dire un site qui s'adpate en 
-        fonction de l'appareil depuis lequel on le consulte, et 
-        règler quelques bugs d'affichages pour finaliser le site Web. 
-
 
     \subsubsection{Xavier}
         Pour faire tourner un jeu, il faut que chaque élément soit relié avec
@@ -212,11 +217,18 @@
         du joueur si il appuie sur les touches pour avancer et reculer, en entrainant les
         roues (et donc la voiture) vers la bonne direction. Et pour les roues avant,
         ils s'occupent de faire tourner la voiture en fonction des actions du joueur.
+        De plus, nous avons mis une caméra qui permet de d'obtenir une \textit{minimap}
+        en haut à gauche de notre écran. Cela nous perment de voir où sont les autres
+        joueurs et notre voiture dans le circuit.
         Après cela, nous avons intégré le mode de jeu mutlijoueur. Nous avons décidé
         d'utiliser \textsl{Photon Cloud}, une solution gratuite, \textit{open source},
         et relativement "simple" à implémenter. Il y a une bonne documentation sur
-        Internet, et de nombreux tutoriaux sur YouTube. Nous avons commencé par
-        créer une scène pour la connection, qui, grâce à une interface graphique,
+        Internet, et de nombreux tutoriaux sur YouTube. Nou avons équipé nos voitures
+        de composants permettant d'"exister" dans le multijoueur comme le \textit{Photon View}
+        qui permet que la voiture soit visible en mode multijoueur et le \textit{Photon
+        Transform View} qui synchronise les joueurs entre les différents ordinateurs.
+        Puis, nous avons 
+        créé une scène pour la connection, qui, grâce à une interface graphique,
         permet de choisir un nom. Ensuite, nous pouvons créer une \textit{room}
         (instance de multijoueur), d'en chercher une déjà ouverte ou encore
         d'en joindre une directement si nous connaissons son nom. Enfin, une
@@ -230,8 +242,7 @@
         à celle en équipe. Nous avions besoin d'un endroit de collaboration où nous 
         pourrions nous échanger les fichiers relatifs au jeu. 
         Nous avons donc créé un ensemble de \textit{repositeries} (ou \textit{repo}) sur \textsl{Github}
-        \footnote{\(\mathtt{\href{https://github.com/Bitume-Legends-Crew}
-        {github.com/Bitume-Legends-Crew}}\)}, répartis dans une organisation,
+        \footnote{\(\mathtt{github.com/Bitume-Legends-Crew}\)}, répartis dans une organisation,
         chacun pour un usage bien spécifique. Le premier est donc le \textit{repo} de
         notre jeu, nommé \textit{game}, qui contient le projet au format \(\mathtt{.unity}\)
         et des dossiers contenants les différents assets et autres ressources,
@@ -247,12 +258,12 @@
 
     \subsection{Communication}
         Pour communiquer entre nous et avec notre équipe de \(\beta\)-testeurs, nous
-        avons créé un serveur Discord \footnote{\(\mathtt{\href{https://discord.
-        gg/5NR43GHUBD}{discord.gg/5NR43GHUBD}}\)} découpé en multiples 
+        avons créé un serveur Discord \footnote{\(\mathtt{discord.gg/5NR43GHUBD}\)}
+        découpé en multiples 
         \textit{channels}, ayant chacun une mission précise pour ne pas mélanger les
         informations. Ce serveur est aussi le lieu de nos réunions hebdomadaires 
         (ou plus fréquemment en cas de soutenance). De plus, depuis le site web, nous
-        avons mis un lien vers un questionnaire de remontée de bugs, via un \textsl{Google Docs}.
+        avons mis un lien vers un questionnaire de remontée de bugs, via un \textsl{Google Forms}.
         Nous avons également mis en place un calendrier collectif lors de la
         dernière semaine avant la soutenance. Cela nous a offert une vision plus
         claire des tâches individuelles et de les découper en plages horaires afin de 
@@ -273,7 +284,8 @@
         implémentée plus tard dans le jeu.
     
     \subsection{Musique}
-        La musique a été composée sur \textsl{FL Studio 20} logiciel de MAO, dans un genre \textsl{Phonk}.
+        La musique a été composée sur \textsl{FL Studio 20} logiciel de MAO, dans un genre 
+        \textsl{Phonk}.
         La \textsl{Phonk} est un genre de \textit{Trap} rapide (tempo de 160 battements par minute) et très 
         énergique. Ce genre est connu pour ses samples (extraits musicaux) de voix tirés de 
         morceaux de rap de Memphis et pour ses percussions. En effet, les instruments de ce 
@@ -331,8 +343,8 @@
         directement dans notre terminal.
         Pour collaborer sur le rapport et les autres documents en \LaTeX\, 
         pour éviter de désigner un "esclave \LaTeX", nous utilisons le site 
-        \textsl{Overleaf}\footnote{\(\mathtt{\href{https://www.overleaf.com/}
-        {overleaf.com}}\)}. À la manière d'un document en ligne, comme 
+        \textsl{Overleaf}\footnote{\(\mathtt{overleaf.com}\)}. 
+        À la manière d'un document en ligne, comme 
         un \textsl{Google Docs} ou autre, nous pouvons écrire en
         simultané et compléter à quatre cerveaux les documents demandés.
 
@@ -381,9 +393,19 @@
         Nous devions être organisé et voir plus loin que la semaine suivante.}
   
     \subsection{Xavier}
-        \textbf{\textsc{Todo}}
+        \textit{La gestion du projet s'est très bien passée. Nous nous sommes
+        rapidement mis d'accord sur une organisation qui nous convenait. Cela a
+        permit d'avancer en restant tous sur la même longueur d'onde. Tout le
+        groupe est très motivé, ce qui est nécéssaire pour un projet de ce type.
+        J'ai eu cependant beaucoup plus de mal à créer le mode multijoueur. J'ai
+        dû m'y reprendre à trois fois en tout, car chaque version antérieure
+        ne marchait pas ou n'acceptait pas les ajouts de fonctionnalités. Cela a
+        occupé une bonne partie de mes soirées depuis mi-Janvier. Malgré cela, 
+        j'ai pu apprendre beaucoup de choses dans pleins de domaines, de
+        l'hébergement Web en reprogammant les \textit{DNS} de \textsl{GitHub}, 
+        ou encore en recherchant comment créer une organisation \textsl{GitHub} 
+        pour gérer le projet.}\\[1cm]
 
-\clearpage
 
 \section{Objectifs pour la suite}
     \subsection{Finir le menu}
@@ -436,42 +458,57 @@
 
 \addcontentsline{toc}{section}{Conclusion}
 \section*{Conclusion}
-    En conclusion, malgré / après vous avoir énoncé nos objectifs, d'ici 
-    la prochaine soutenance ils ne seront pas tous terminé. Nous avons
-    prévu d'avoir terminé les différents mode jeux, dont l'\textit{IA}. 
-    De plus, nous devons avoir les différents circuits, 
-    Nous serons ravi de vous revoir le \textbf{PROCHAINE DATE DE SOUTENANCE}
+    En conclusion, voici là où nous en sommes dans notre projet.
+    Nous sommes contents de notre avancée, et nous savons comment
+    nous allons continuer notre projet. 
+    Nous serons ravi de vous revoir fin avril pour vous montrer nos nouvelles
+    implémentations !
 
 \section*{Références}
     \begin{itemize}
-        \item \(\mathtt{\href{https://www.blender.org/}{blender.org}}\)
-        \item \(\mathtt{\href{https://bootstrapstudio.io/}{bootstrapstudio.io}}\)
-        \item \(\mathtt{\href{https://discord.com/}{discord.com}}\)
-        \item \(\mathtt{\href{https://unity.com/fr}{unity.com}}\)
-        \item \(\mathtt{\href{https://www.photonengine.com/pun}{photonengine.com/pun}}\)
-        \item \(\mathtt{\href{https://www.overleaf.com/}{overleaf.com}}\)
-        \item \(\mathtt{\href{https://www.jetbrains.com/rider/}{jetbrains.com/rider}}\)
-        \item \(\mathtt{\href{https://assetstore.unity.com}{assetstore.unity.com}}\)
-        \item \(\mathtt{\href{https://www.image-line.com/fl-studio/}{image-line.com/fl-studio}}\)\\[9cm]
+        \item \(\mathtt{blender.org}\)
+        \item \(\mathtt{bootstrapstudio.io}\)
+        \item \(\mathtt{discord.com}\)
+        \item \(\mathtt{unity.com}\)
+        \item \(\mathtt{photonengine.com/pun}\)
+        \item \(\mathtt{overleaf.com}\)
+        \item \(\mathtt{jetbrains.com/rider}\)
+        \item \(\mathtt{assetstore.unity.com}\)
+        \item \(\mathtt{image-line.com/fl-studio}\)\\[6cm]
     \end{itemize}
 
 \begin{center}
     Made with $\heartsuit$ by \CEX\, on \LaTeX.\\
     \textcopyright\, 2021-2022 \btmlgs\\
-    \(\mathtt{\href{https://btms.games/}{btms.games}}\)
+    \(\mathtt{btms.games}\)
 \end{center}
 
 \clearpage
 \addcontentsline{toc}{section}{Annexes}
 \section*{Annexes}
 \listoffigures
-il faut encore caler:
-\begin{itemize}
-    \item F1
-    \item capture du site
-    \item screen du bugreport
-    
-\end{itemize}
+
+\begin{figure}[h]
+    \includegraphics[width=15cm]{f21BG.png}
+    \caption{La Formule 1 créée sur \textsl{Blender}}
+    \label{fig:F1}
+    \centering
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=15cm]{circuit.png}
+    \caption{Circuit numéro 1}
+    \label{fig:track}
+\end{figure}
+
+\begin{figure}[h]
+    \includegraphics[width=15cm]{menu.png}
+    \caption{Le menu principal du jeu}
+    \label{fig:menu}
+    \centering
+\end{figure}
+
 \begin{figure}[h]
     \centering
     \includegraphics[width=20cm, angle=90]{Menu_Principal.png}
@@ -479,4 +516,44 @@ il faut encore caler:
     \label{fig:mindmap}
     Ce qui est entouré est déjà implémenté, le reste suivra.
 \end{figure}
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=12cm]{prefab.png}
+    \caption{Capture de notre voiture équipée}
+    \label{fig:prefab}
+    Logiciel \textsl{Unity 3D}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=12cm]{bootstrap.png}
+    \caption{Capture du logiciel \textsl{Bootstrap Studio}}
+    \label{fig:bootstrap}
+    (utilisé pour créer le site web)
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=15cm]{site.png}
+    \caption{Capture du site Internet}
+    \label{fig:site}
+    \(\mathtt{btms.games}\)
+\end{figure}
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=12cm]{bugreport.png}
+    \caption{Capture du formulaire de remontée de bugs}
+    \label{fig:bug}
+\end{figure}
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=15cm]{zik.png}
+    \caption{Capture de la piste de la musique de courses}
+    \label{fig:zik}
+    \textsl{FL Studio 20}
+\end{figure}
+
 \end{document}
