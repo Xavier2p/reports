@@ -6,36 +6,53 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Packages
-\documentclass[11pt,a4paper]{article}
+\documentclass[12pt,a4paper]{article}
 \usepackage{mathtools}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage[french]{babel}
 \usepackage[T1]{fontenc}
 \usepackage{url}
-% \usepackage{fancyhdr}
-% \usepackage{blindtext}
+\usepackage{fancyhdr}
+\usepackage{longtable}
+\usepackage[aboveskip=.5cm]{caption}
+\usepackage{pdflscape}
+\usepackage{geometry}
 
 % Global settings of document
-\setlength\parindent{15pt}
-\newcommand{\btmlgs}{\textit{Bitume Legends}}
+\setlength\parindent{20pt}
+\newcommand{\btmlgs}{\textsl{Bitume Legends}}
 \newcommand{\AI}{Intelligence Artificielle}
-%\pagestyle{fancy}
-%\fancyhf{}
-%\rhead{Bitume Legends}
-%\lhead{Cahier des Charge}
+\newcommand{\CEX}{\textsc{CarrEniX}}
+\pagestyle{fancy}
+\rhead{\btmlgs}
+\lhead{Rapport de Première Soutenance}
+\rfoot{Page \thepage}
+\lfoot{\CEX}
+\fancyfoot[C]{}
+\setlength{\headheight}{15pt}
+\geometry{textheight=600pt}
+\renewcommand{\listfigurename}{Table des Annexes}
+\renewcommand{\contentsname}{Table des Matières}
 
 % Begin of the document
 \begin{document}
 
-\title{Seconde Soutenance \\ {\large Projet Bitume Legends}}
-\author{CarrEniX}
-\date{Avril 2022}
-\maketitle
-
-% \begin{center}
-%   \includegraphics[width=0.5\textwidth]{Medias/logo192.png}
-% \end{center}
+\begin{titlepage}
+    \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+    \center
+    \text{\LARGE Projet \btmlgs}\\[1cm]
+    \includegraphics[scale=0.7]{../Medias/logo192.png} \\[1cm]
+    \HRule \\[0.4cm]
+    { \huge \bfseries Rapport de Soutenance Intermédiaire\\[0.3cm] }
+    \HRule \\[1.5cm]
+    {\large \bfseries \CEX} \\[0.3cm]
+    Anthony \textsc{Caron}\;--\;Melvyn \textsc{Delaroque}\\
+    Victorien \textsc{Cambourian}\;--\;Xavier \textsc{de Place}
+    \\ [4.5cm]
+    EPITA INFOSUP 2026\\Année 2021 - 2022\\
+    \(\mathtt{btms.games}\)
+\end{titlepage}
 
 \tableofcontents
 \clearpage
