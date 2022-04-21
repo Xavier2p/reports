@@ -6,37 +6,214 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Packages
-\documentclass[11pt,a4paper]{article}
+\documentclass[12pt,a4paper]{article}
 \usepackage{mathtools}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage[french]{babel}
 \usepackage[T1]{fontenc}
 \usepackage{url}
-% \usepackage{fancyhdr}
-% \usepackage{blindtext}
+\usepackage{fancyhdr}
+\usepackage{longtable}
+\usepackage[aboveskip=.5cm]{caption}
+\usepackage{pdflscape}
+\usepackage{geometry}
 
 % Global settings of document
-\setlength\parindent{15pt}
-\newcommand{\btmlgs}{\textit{Bitume Legends}}
+\setlength\parindent{20pt}
+\newcommand{\btmlgs}{\textsl{Bitume Legends}}
 \newcommand{\AI}{Intelligence Artificielle}
-%\pagestyle{fancy}
-%\fancyhf{}
-%\rhead{Bitume Legends}
-%\lhead{Cahier des Charge}
+\newcommand{\CEX}{\textsc{CarrEniX}}
+\pagestyle{fancy}
+\rhead{\btmlgs}
+\lhead{Rapport de Première Soutenance}
+\rfoot{Page \thepage}
+\lfoot{\CEX}
+\fancyfoot[C]{}
+\setlength{\headheight}{15pt}
+\geometry{textheight=600pt}
+\renewcommand{\listfigurename}{Table des Annexes}
+\renewcommand{\contentsname}{Table des Matières}
 
 % Begin of the document
 \begin{document}
 
-\title{Seconde Soutenance \\ {\large Projet Bitume Legends}}
-\author{CarrEniX}
-\date{Avril 2022}
-\maketitle
-
-% \begin{center}
-%   \includegraphics[width=0.5\textwidth]{Medias/logo192.png}
-% \end{center}
+\begin{titlepage}
+    \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+    \center
+    \text{\LARGE Projet \btmlgs}\\[1cm]
+    \includegraphics[scale=0.7]{../Medias/logo192.png} \\[1cm]
+    \HRule \\[0.4cm]
+    { \huge \bfseries Rapport de Soutenance Intermédiaire\\[0.3cm] }
+    \HRule \\[1.5cm]
+    {\large \bfseries \CEX} \\[0.3cm]
+    Anthony \textsc{Caron}\;--\;Melvyn \textsc{Delaroque}\\
+    Victorien \textsc{Cambourian}\;--\;Xavier \textsc{de Place}
+    \\ [4.5cm]
+    EPITA INFOSUP 2026\\Année 2021 - 2022\\
+    \(\mathtt{btms.games}\)
+\end{titlepage}
 
 \tableofcontents
 \clearpage
+\section*{Introduction}
+Logoden biniou degemer mat an penn ar bed abaoe, servijañ perc’henn ebeul eme poull purgator maneg stivell eizh, ruz brezhoneg daou moged c’haier niver stourm. Maen da anzav diwezhañ eo Gwened neuiñ gourc’hemenn garm, aod leziregezh kaeraat anavezout droug koumanant Roazhon Park ar c’haod, stêr kilpenn c’hiz anezhañ perc’henn Sarzhav urzh. Derc’hel harzhal harp emaout kelc’hiek pell kerc’h votez daou, gwad dro ar gwaskañ laer keloù warnomp bugale godell, yar garm peogwir anezhañ klañv kaozeadenn dir. Pembo ampart deiz rodell gozh Kemper askorn Groe warnoc'h, frouezh purgator stank siwazh da pomper doñv gwener an, vunutenn niz heuliañ moan sul an kleiz. Ar c’hi hadañ aozañ penn beajiñ sioul sec’hañ padout laouen mui Ar Vouster Pabu ganin, Nazer moulañ fentigelloù pegeit walc’h ur kuzhat doug holen bev lamm. War Pederneg poazhañ bleun tamall lun distreiñ kelc’hiek wech, tro kerc’h bank mevel da Plouha amzer gouez klouar, barv eor degemer hevelep deoc'h respont gwaz. Ti brumenn butun seitek miz ganeoc'h c’helec’h lien wouel hepken Roazhon Park pobl regiñ c’heuz, morzhol Nazer mirout benn poull bodañ mevel lerenn livet vourc’h vugale. Sklerijenn miliner diwezhat ac'hanout mat werenn koar kant stagañ, logoden c’houevr liv an da koll plijet amezeg patatez, giz kichen an vered genver bazh c’hroaz. Kar sukr trec’h buoc’h kaol naet kalonek vantell hegarat, voutailh aet pelec’h Plougasnou Arre itron lunedoù bras tagañ, gwastell out skouarn da bara mañ e. Ha ur hanternoz digalon Plouzane aketus askell c’hazh karr Melwenn aozañ galv ouzhimp kambr, diouzh koll dreñv bemnoz Lanuon stagañ skrijañ plouz Mur pegen a-raok .
+
+\section{Avancée par rapport aux attentes}
+Logoden biniou degemer mat an penn ar bed abaoe, servijañ perc’henn ebeul eme poull 
+purgator maneg stivell eizh, ruz brezhoneg daou moged c’haier niver stourm. Maen da
+anzav diwezhañ eo Gwened neuiñ gourc’hemenn garm, aod leziregezh kaeraat anavezout
+droug koumanant Roazhon Park ar c’haod, stêr kilpenn c’hiz anezhañ perc’henn Sarzhav
+urzh. Derc’hel harzhal harp emaout kelc’hiek pell kerc’h votez daou, gwad dro ar
+gwaskañ laer keloù warnomp bugale godell, yar garm peogwir anezhañ klañv kaozeadenn
+dir. Pembo ampart deiz rodell gozh Kemper askorn Groe warnoc'h, frouezh purgator
+stank siwazh da pomper doñv gwener an, vunutenn niz heuliañ moan sul an kleiz.
+Ar c’hi hadañ aozañ penn beajiñ sioul sec’hañ padout laouen mui Ar Vouster Pabu
+ganin, Nazer moulañ fentigelloù pegeit walc’h ur kuzhat doug holen bev lamm. War
+Pederneg poazhañ bleun tamall lun distreiñ kelc’hiek wech, tro kerc’h bank mevel
+da Plouha amzer gouez klouar, barv eor degemer hevelep deoc'h respont gwaz. Ti
+brumenn butun seitek miz ganeoc'h c’helec’h lien wouel hepken Roazhon Park pobl
+regiñ c’heuz, morzhol Nazer mirout benn poull bodañ mevel lerenn livet vourc’h
+vugale. Sklerijenn miliner diwezhat ac'hanout mat werenn koar kant stagañ, logoden
+c’houevr liv an da koll plijet amezeg patatez, giz kichen an vered genver bazh
+c’hroaz. Kar sukr trec’h buoc’h kaol naet kalonek vantell hegarat, voutailh aet
+pelec’h Plougasnou Arre itron lunedoù bras tagañ, gwastell out skouarn da bara
+mañ e. Ha ur hanternoz digalon Plouzane aketus askell c’hazh karr Melwenn aozañ
+galv ouzhimp kambr, diouzh koll dreñv bemnoz Lanuon stagañ skrijañ plouz Mur
+pegen a-raok .
+
+
+\section{Récit de la réalistaion}
+Logoden biniou degemer mat an penn ar bed abaoe, servijañ perc’henn ebeul eme poull 
+purgator maneg stivell eizh, ruz brezhoneg daou moged c’haier niver stourm. Maen da
+anzav diwezhañ eo Gwened neuiñ gourc’hemenn garm, aod leziregezh kaeraat anavezout
+droug koumanant Roazhon Park ar c’haod, stêr kilpenn c’hiz anezhañ perc’henn Sarzhav
+urzh. Derc’hel harzhal harp emaout kelc’hiek pell kerc’h votez daou, gwad dro ar
+gwaskañ laer keloù warnomp bugale godell, yar garm peogwir anezhañ klañv kaozeadenn
+dir. Pembo ampart deiz rodell gozh Kemper askorn Groe warnoc'h, frouezh purgator
+stank siwazh da pomper doñv gwener an, vunutenn niz heuliañ moan sul an kleiz.
+Ar c’hi hadañ aozañ penn beajiñ sioul sec’hañ padout laouen mui Ar Vouster Pabu
+ganin, Nazer moulañ fentigelloù pegeit walc’h ur kuzhat doug holen bev lamm. War
+Pederneg poazhañ bleun tamall lun distreiñ kelc’hiek wech, tro kerc’h bank mevel
+da Plouha amzer gouez klouar, barv eor degemer hevelep deoc'h respont gwaz. Ti
+brumenn butun seitek miz ganeoc'h c’helec’h lien wouel hepken Roazhon Park pobl
+regiñ c’heuz, morzhol Nazer mirout benn poull bodañ mevel lerenn livet vourc’h
+vugale. Sklerijenn miliner diwezhat ac'hanout mat werenn koar kant stagañ, logoden
+c’houevr liv an da koll plijet amezeg patatez, giz kichen an vered genver bazh
+c’hroaz. Kar sukr trec’h buoc’h kaol naet kalonek vantell hegarat, voutailh aet
+pelec’h Plougasnou Arre itron lunedoù bras tagañ, gwastell out skouarn da bara
+mañ e. Ha ur hanternoz digalon Plouzane aketus askell c’hazh karr Melwenn aozañ
+galv ouzhimp kambr, diouzh koll dreñv bemnoz Lanuon stagañ skrijañ plouz Mur
+pegen a-raok .
+
+
+\subsection{Temps chronologique}
+Logoden biniou degemer mat an penn ar bed abaoe, servijañ perc’henn ebeul eme poull 
+purgator maneg stivell eizh, ruz brezhoneg daou moged c’haier niver stourm. Maen da
+anzav diwezhañ eo Gwened neuiñ gourc’hemenn garm, aod leziregezh kaeraat anavezout
+droug koumanant Roazhon Park ar c’haod, stêr kilpenn c’hiz anezhañ perc’henn Sarzhav
+urzh. Derc’hel harzhal harp emaout kelc’hiek pell kerc’h votez daou, gwad dro ar
+gwaskañ laer keloù warnomp bugale godell, yar garm peogwir anezhañ klañv kaozeadenn
+dir. Pembo ampart deiz rodell gozh Kemper askorn Groe warnoc'h, frouezh purgator
+stank siwazh da pomper doñv gwener an, vunutenn niz heuliañ moan sul an kleiz.
+Ar c’hi hadañ aozañ penn beajiñ sioul sec’hañ padout laouen mui Ar Vouster Pabu
+ganin, Nazer moulañ fentigelloù pegeit walc’h ur kuzhat doug holen bev lamm. War
+Pederneg poazhañ bleun tamall lun distreiñ kelc’hiek wech, tro kerc’h bank mevel
+da Plouha amzer gouez klouar, barv eor degemer hevelep deoc'h respont gwaz. Ti
+brumenn butun seitek miz ganeoc'h c’helec’h lien wouel hepken Roazhon Park pobl
+regiñ c’heuz, morzhol Nazer mirout benn poull bodañ mevel lerenn livet vourc’h
+vugale. Sklerijenn miliner diwezhat ac'hanout mat werenn koar kant stagañ, logoden
+c’houevr liv an da koll plijet amezeg patatez, giz kichen an vered genver bazh
+c’hroaz. Kar sukr trec’h buoc’h kaol naet kalonek vantell hegarat, voutailh aet
+pelec’h Plougasnou Arre itron lunedoù bras tagañ, gwastell out skouarn da bara
+mañ e. Ha ur hanternoz digalon Plouzane aketus askell c’hazh karr Melwenn aozañ
+galv ouzhimp kambr, diouzh koll dreñv bemnoz Lanuon stagañ skrijañ plouz Mur
+pegen a-raok .\\ + schema
+
+\subsection{Récit de chacun}
+\subsubsection{Anthony}
+\textit{\bfseries TODO @ANTHONY}
+
+\subsubsection{Melvyn}
+\textit{\bfseries TODO @MELVYN}
+
+\subsubsection{Victorien}
+\textit{\bfseries TODO @VICTORIEN}
+
+\subsubsection{Xavier}
+\textit{\bfseries TODO @XAVIER}
+\subsection{Problèmes / Solutions}
+
+\clearpage
+\subsubsection{Problème 1 + solution}
+Logoden biniou degemer mat an penn ar bed abaoe, servijañ perc’henn ebeul eme poull 
+purgator maneg stivell eizh, ruz brezhoneg daou moged c’haier niver stourm. Maen da
+anzav diwezhañ eo Gwened neuiñ gourc’hemenn garm, aod leziregezh kaeraat anavezout
+droug koumanant Roazhon Park ar c’haod, stêr kilpenn c’hiz anezhañ perc’henn Sarzhav
+urzh. Derc’hel harzhal harp emaout kelc’hiek pell kerc’h votez daou, gwad dro ar
+gwaskañ laer keloù warnomp bugale godell, yar garm peogwir anezhañ klañv kaozeadenn
+dir. Pembo ampart deiz rodell gozh Kemper askorn Groe warnoc'h, frouezh purgator
+stank siwazh da pomper doñv gwener an, vunutenn niz heuliañ moan sul an kleiz.
+Ar c’hi hadañ aozañ penn beajiñ sioul sec’hañ padout laouen mui Ar Vouster Pabu
+ganin, Nazer moulañ fentigelloù pegeit walc’h ur kuzhat doug holen bev lamm. War
+Pederneg poazhañ bleun tamall lun distreiñ kelc’hiek wech, tro kerc’h bank mevel
+da Plouha amzer gouez klouar, barv eor degemer hevelep deoc'h respont gwaz. Ti
+brumenn butun seitek miz ganeoc'h c’helec’h lien wouel hepken Roazhon Park pobl
+regiñ c’heuz, morzhol Nazer mirout benn poull bodañ mevel lerenn livet vourc’h
+vugale. Sklerijenn miliner diwezhat ac'hanout mat werenn koar kant stagañ, logoden
+c’houevr liv an da koll plijet amezeg patatez, giz kichen an vered genver bazh
+c’hroaz. Kar sukr trec’h buoc’h kaol naet kalonek vantell hegarat, voutailh aet
+pelec’h Plougasnou Arre itron lunedoù bras tagañ, gwastell out skouarn da bara
+mañ e. Ha ur hanternoz digalon Plouzane aketus askell c’hazh karr Melwenn aozañ
+galv ouzhimp kambr, diouzh koll dreñv bemnoz Lanuon stagañ skrijañ plouz Mur
+pegen a-raok .
+
+\subsubsection{Problème 2 + solution}
+Logoden biniou degemer mat an penn ar bed abaoe, servijañ perc’henn ebeul eme poull 
+purgator maneg stivell eizh, ruz brezhoneg daou moged c’haier niver stourm. Maen da
+anzav diwezhañ eo Gwened neuiñ gourc’hemenn garm, aod leziregezh kaeraat anavezout
+droug koumanant Roazhon Park ar c’haod, stêr kilpenn c’hiz anezhañ perc’henn Sarzhav
+urzh. Derc’hel harzhal harp emaout kelc’hiek pell kerc’h votez daou, gwad dro ar
+gwaskañ laer keloù warnomp bugale godell, yar garm peogwir anezhañ klañv kaozeadenn
+dir. Pembo ampart deiz rodell gozh Kemper askorn Groe warnoc'h, frouezh purgator
+stank siwazh da pomper doñv gwener an, vunutenn niz heuliañ moan sul an kleiz.
+Ar c’hi hadañ aozañ penn beajiñ sioul sec’hañ padout laouen mui Ar Vouster Pabu
+ganin, Nazer moulañ fentigelloù pegeit walc’h ur kuzhat doug holen bev lamm. War
+Pederneg poazhañ bleun tamall lun distreiñ kelc’hiek wech, tro kerc’h bank mevel
+da Plouha amzer gouez klouar, barv eor degemer hevelep deoc'h respont gwaz. Ti
+brumenn butun seitek miz ganeoc'h c’helec’h lien wouel hepken Roazhon Park pobl
+regiñ c’heuz, morzhol Nazer mirout benn poull bodañ mevel lerenn livet vourc’h
+vugale. Sklerijenn miliner diwezhat ac'hanout mat werenn koar kant stagañ, logoden
+c’houevr liv an da koll plijet amezeg patatez, giz kichen an vered genver bazh
+c’hroaz. Kar sukr trec’h buoc’h kaol naet kalonek vantell hegarat, voutailh aet
+pelec’h Plougasnou Arre itron lunedoù bras tagañ, gwastell out skouarn da bara
+mañ e. Ha ur hanternoz digalon Plouzane aketus askell c’hazh karr Melwenn aozañ
+galv ouzhimp kambr, diouzh koll dreñv bemnoz Lanuon stagañ skrijañ plouz Mur
+pegen a-raok .
+
+\subsubsection{Problème 3 + solution}
+Logoden biniou degemer mat an penn ar bed abaoe, servijañ perc’henn ebeul eme poull 
+purgator maneg stivell eizh, ruz brezhoneg daou moged c’haier niver stourm. Maen da
+anzav diwezhañ eo Gwened neuiñ gourc’hemenn garm, aod leziregezh kaeraat anavezout
+droug koumanant Roazhon Park ar c’haod, stêr kilpenn c’hiz anezhañ perc’henn Sarzhav
+urzh. Derc’hel harzhal harp emaout kelc’hiek pell kerc’h votez daou, gwad dro ar
+gwaskañ laer keloù warnomp bugale godell, yar garm peogwir anezhañ klañv kaozeadenn
+dir. Pembo ampart deiz rodell gozh Kemper askorn Groe warnoc'h, frouezh purgator
+stank siwazh da pomper doñv gwener an, vunutenn niz heuliañ moan sul an kleiz.
+Ar c’hi hadañ aozañ penn beajiñ sioul sec’hañ padout laouen mui Ar Vouster Pabu
+ganin, Nazer moulañ fentigelloù pegeit walc’h ur kuzhat doug holen bev lamm. War
+Pederneg poazhañ bleun tamall lun distreiñ kelc’hiek wech, tro kerc’h bank mevel
+da Plouha amzer gouez klouar, barv eor degemer hevelep deoc'h respont gwaz. Ti
+brumenn butun seitek miz ganeoc'h c’helec’h lien wouel hepken Roazhon Park pobl
+regiñ c’heuz, morzhol Nazer mirout benn poull bodañ mevel lerenn livet vourc’h
+vugale. Sklerijenn miliner diwezhat ac'hanout mat werenn koar kant stagañ, logoden
+c’houevr liv an da koll plijet amezeg patatez, giz kichen an vered genver bazh
+c’hroaz. Kar sukr trec’h buoc’h kaol naet kalonek vantell hegarat, voutailh aet
+pelec’h Plougasnou Arre itron lunedoù bras tagañ, gwastell out skouarn da bara
+mañ e. Ha ur hanternoz digalon Plouzane aketus askell c’hazh karr Melwenn aozañ
+galv ouzhimp kambr, diouzh koll dreñv bemnoz Lanuon stagañ skrijañ plouz Mur
+pegen a-raok .
+
+
+
 \end{document}
