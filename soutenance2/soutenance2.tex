@@ -1,9 +1,9 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Soutenance 2
 % Bitume Legends Project
 % CarrEniX
 % Avril 2022
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Packages
 \documentclass[12pt,a4paper]{article}
@@ -26,7 +26,7 @@
 \newcommand{\CEX}{\textsc{CarrEniX}}
 \pagestyle{fancy}
 \rhead{\btmlgs}
-\lhead{Rapport de Première Soutenance}
+\lhead{Rapport de Soutenance Intermédiaire}
 \rfoot{Page \thepage}
 \lfoot{\CEX}
 \fancyfoot[C]{}
@@ -34,186 +34,172 @@
 \geometry{textheight=600pt}
 \renewcommand{\listfigurename}{Table des Annexes}
 \renewcommand{\contentsname}{Table des Matières}
+\graphicspath{{../Medias}}
 
 % Begin of the document
 \begin{document}
 
-\begin{titlepage}
-    \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
-    \center
-    \text{\LARGE Projet \btmlgs}\\[1cm]
-    \includegraphics[scale=0.7]{../Medias/logo192.png} \\[1cm]
-    \HRule \\[0.4cm]
-    { \huge \bfseries Rapport de Soutenance Intermédiaire\\[0.3cm] }
-    \HRule \\[1.5cm]
-    {\large \bfseries \CEX} \\[0.3cm]
-    Anthony \textsc{Caron}\;--\;Melvyn \textsc{Delaroque}\\
-    Victorien \textsc{Cambourian}\;--\;Xavier \textsc{de Place}
-    \\ [4.5cm]
-    EPITA INFOSUP 2026\\Année 2021 - 2022\\
-    \(\mathtt{btms.games}\)
-\end{titlepage}
+    \begin{titlepage}
+        \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+        \center
+        \text{\LARGE Projet \btmlgs}\\[1cm]
+        \includegraphics[scale=0.7]{logo192.png} \\[1cm]
+        \HRule \\[0.4cm]
+        { \huge \bfseries Rapport de Soutenance Intermédiaire\\[0.3cm] }
+        \HRule \\[1.5cm]
+        {\large \bfseries \CEX} \\[0.3cm]
+        Anthony \textsc{Caron}\;--\;Melvyn \textsc{Delaroque}\\
+        Victorien \textsc{Cambourian}\;--\;Xavier \textsc{de Place}
+        \\ [4.5cm]
+        EPITA INFOSUP 2026\\Année 2021 - 2022\\
+        \(\mathtt{btms.games}\)
+    \end{titlepage}
 
-\tableofcontents
-\clearpage
-\section*{Introduction}
-Logoden biniou degemer mat an penn ar bed abaoe, servijañ perc’henn ebeul eme poull purgator maneg stivell eizh, ruz brezhoneg daou moged c’haier niver stourm. Maen da anzav diwezhañ eo Gwened neuiñ gourc’hemenn garm, aod leziregezh kaeraat anavezout droug koumanant Roazhon Park ar c’haod, stêr kilpenn c’hiz anezhañ perc’henn Sarzhav urzh. Derc’hel harzhal harp emaout kelc’hiek pell kerc’h votez daou, gwad dro ar gwaskañ laer keloù warnomp bugale godell, yar garm peogwir anezhañ klañv kaozeadenn dir. Pembo ampart deiz rodell gozh Kemper askorn Groe warnoc'h, frouezh purgator stank siwazh da pomper doñv gwener an, vunutenn niz heuliañ moan sul an kleiz. Ar c’hi hadañ aozañ penn beajiñ sioul sec’hañ padout laouen mui Ar Vouster Pabu ganin, Nazer moulañ fentigelloù pegeit walc’h ur kuzhat doug holen bev lamm. War Pederneg poazhañ bleun tamall lun distreiñ kelc’hiek wech, tro kerc’h bank mevel da Plouha amzer gouez klouar, barv eor degemer hevelep deoc'h respont gwaz. Ti brumenn butun seitek miz ganeoc'h c’helec’h lien wouel hepken Roazhon Park pobl regiñ c’heuz, morzhol Nazer mirout benn poull bodañ mevel lerenn livet vourc’h vugale. Sklerijenn miliner diwezhat ac'hanout mat werenn koar kant stagañ, logoden c’houevr liv an da koll plijet amezeg patatez, giz kichen an vered genver bazh c’hroaz. Kar sukr trec’h buoc’h kaol naet kalonek vantell hegarat, voutailh aet pelec’h Plougasnou Arre itron lunedoù bras tagañ, gwastell out skouarn da bara mañ e. Ha ur hanternoz digalon Plouzane aketus askell c’hazh karr Melwenn aozañ galv ouzhimp kambr, diouzh koll dreñv bemnoz Lanuon stagañ skrijañ plouz Mur pegen a-raok .
+    \tableofcontents
+    \clearpage
 
-\section{Avancée par rapport aux attentes}
-Logoden biniou degemer mat an penn ar bed abaoe, servijañ perc’henn ebeul eme poull 
-purgator maneg stivell eizh, ruz brezhoneg daou moged c’haier niver stourm. Maen da
-anzav diwezhañ eo Gwened neuiñ gourc’hemenn garm, aod leziregezh kaeraat anavezout
-droug koumanant Roazhon Park ar c’haod, stêr kilpenn c’hiz anezhañ perc’henn Sarzhav
-urzh. Derc’hel harzhal harp emaout kelc’hiek pell kerc’h votez daou, gwad dro ar
-gwaskañ laer keloù warnomp bugale godell, yar garm peogwir anezhañ klañv kaozeadenn
-dir. Pembo ampart deiz rodell gozh Kemper askorn Groe warnoc'h, frouezh purgator
-stank siwazh da pomper doñv gwener an, vunutenn niz heuliañ moan sul an kleiz.
-Ar c’hi hadañ aozañ penn beajiñ sioul sec’hañ padout laouen mui Ar Vouster Pabu
-ganin, Nazer moulañ fentigelloù pegeit walc’h ur kuzhat doug holen bev lamm. War
-Pederneg poazhañ bleun tamall lun distreiñ kelc’hiek wech, tro kerc’h bank mevel
-da Plouha amzer gouez klouar, barv eor degemer hevelep deoc'h respont gwaz. Ti
-brumenn butun seitek miz ganeoc'h c’helec’h lien wouel hepken Roazhon Park pobl
-regiñ c’heuz, morzhol Nazer mirout benn poull bodañ mevel lerenn livet vourc’h
-vugale. Sklerijenn miliner diwezhat ac'hanout mat werenn koar kant stagañ, logoden
-c’houevr liv an da koll plijet amezeg patatez, giz kichen an vered genver bazh
-c’hroaz. Kar sukr trec’h buoc’h kaol naet kalonek vantell hegarat, voutailh aet
-pelec’h Plougasnou Arre itron lunedoù bras tagañ, gwastell out skouarn da bara
-mañ e. Ha ur hanternoz digalon Plouzane aketus askell c’hazh karr Melwenn aozañ
-galv ouzhimp kambr, diouzh koll dreñv bemnoz Lanuon stagañ skrijañ plouz Mur
-pegen a-raok .
+    \addcontentsline{toc}{section}{Introduction}
+    \section*{Introduction}
+        Nous sommes le studio \CEX\, qui développe \btmlgs, un jeu de course automobile 3D en
+        \textit{low-poly}. Après avoir commencé le projet début janvier, et présenté notre avancée 
+        mi-mars, nous publions notre second rapport. Il permet de faire le point sur ce que nous avons
+        fait, les objectifs atteints, les priorités ainsi que les ressources utilisés durant ce projet.
+        
+        \textbf{\(\Downarrow\) PLAN À CORRIGER SI BESOIN \(\Downarrow\)}\\
+        Dans ce rapport, nous allons aborder l'avancée de notre projet, l'organisation de notre groupe,
+        les ressources et créations de chacun des membres du groupe ainsi que leurs valeurs 
+        ajoutées, le ressenti des membres durant cette première période et nos objectifs.
 
-
-\section{Récit de la réalistaion}
-Logoden biniou degemer mat an penn ar bed abaoe, servijañ perc’henn ebeul eme poull 
-purgator maneg stivell eizh, ruz brezhoneg daou moged c’haier niver stourm. Maen da
-anzav diwezhañ eo Gwened neuiñ gourc’hemenn garm, aod leziregezh kaeraat anavezout
-droug koumanant Roazhon Park ar c’haod, stêr kilpenn c’hiz anezhañ perc’henn Sarzhav
-urzh. Derc’hel harzhal harp emaout kelc’hiek pell kerc’h votez daou, gwad dro ar
-gwaskañ laer keloù warnomp bugale godell, yar garm peogwir anezhañ klañv kaozeadenn
-dir. Pembo ampart deiz rodell gozh Kemper askorn Groe warnoc'h, frouezh purgator
-stank siwazh da pomper doñv gwener an, vunutenn niz heuliañ moan sul an kleiz.
-Ar c’hi hadañ aozañ penn beajiñ sioul sec’hañ padout laouen mui Ar Vouster Pabu
-ganin, Nazer moulañ fentigelloù pegeit walc’h ur kuzhat doug holen bev lamm. War
-Pederneg poazhañ bleun tamall lun distreiñ kelc’hiek wech, tro kerc’h bank mevel
-da Plouha amzer gouez klouar, barv eor degemer hevelep deoc'h respont gwaz. Ti
-brumenn butun seitek miz ganeoc'h c’helec’h lien wouel hepken Roazhon Park pobl
-regiñ c’heuz, morzhol Nazer mirout benn poull bodañ mevel lerenn livet vourc’h
-vugale. Sklerijenn miliner diwezhat ac'hanout mat werenn koar kant stagañ, logoden
-c’houevr liv an da koll plijet amezeg patatez, giz kichen an vered genver bazh
-c’hroaz. Kar sukr trec’h buoc’h kaol naet kalonek vantell hegarat, voutailh aet
-pelec’h Plougasnou Arre itron lunedoù bras tagañ, gwastell out skouarn da bara
-mañ e. Ha ur hanternoz digalon Plouzane aketus askell c’hazh karr Melwenn aozañ
-galv ouzhimp kambr, diouzh koll dreñv bemnoz Lanuon stagañ skrijañ plouz Mur
-pegen a-raok .
+    \section{Avancée par rapport aux attentes}
+        Nous reprenons point par point le précédent rapport et nous vérifions que chaque objectif
+        posé dans celui-ci est bien accompli.
+        \subsection{Finir le menu}
+            \textbf{\textsc{Todo Here @Victorien / @Melvyn}}\\
+            |\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\_\_\_\\
+        \subsection{Finir le site Web}
+            \textbf{\textsc{Todo Here @Anthony}}\\
+            |\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\_\_\_\\
+        \subsection{Continuer les musiques}
+            \textbf{\textsc{Todo Here @Melvyn}}\\
+            |\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\_\_\_\\
+        \subsection{Implémentation de l'\AI}
+            \textbf{\textsc{Todo Here @Xavier}}\\
+            |\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\_\_\_\\
+        \subsection{Gameplay}
+            On parle ici de tt ce qui touche la course, donc le start, le win, les visuels et tt
+            le reste avec l'expérience, on dit que conformément au CdC, on le fait en sprint 4.
 
 
-\subsection{Temps chronologique}
-Logoden biniou degemer mat an penn ar bed abaoe, servijañ perc’henn ebeul eme poull 
-purgator maneg stivell eizh, ruz brezhoneg daou moged c’haier niver stourm. Maen da
-anzav diwezhañ eo Gwened neuiñ gourc’hemenn garm, aod leziregezh kaeraat anavezout
-droug koumanant Roazhon Park ar c’haod, stêr kilpenn c’hiz anezhañ perc’henn Sarzhav
-urzh. Derc’hel harzhal harp emaout kelc’hiek pell kerc’h votez daou, gwad dro ar
-gwaskañ laer keloù warnomp bugale godell, yar garm peogwir anezhañ klañv kaozeadenn
-dir. Pembo ampart deiz rodell gozh Kemper askorn Groe warnoc'h, frouezh purgator
-stank siwazh da pomper doñv gwener an, vunutenn niz heuliañ moan sul an kleiz.
-Ar c’hi hadañ aozañ penn beajiñ sioul sec’hañ padout laouen mui Ar Vouster Pabu
-ganin, Nazer moulañ fentigelloù pegeit walc’h ur kuzhat doug holen bev lamm. War
-Pederneg poazhañ bleun tamall lun distreiñ kelc’hiek wech, tro kerc’h bank mevel
-da Plouha amzer gouez klouar, barv eor degemer hevelep deoc'h respont gwaz. Ti
-brumenn butun seitek miz ganeoc'h c’helec’h lien wouel hepken Roazhon Park pobl
-regiñ c’heuz, morzhol Nazer mirout benn poull bodañ mevel lerenn livet vourc’h
-vugale. Sklerijenn miliner diwezhat ac'hanout mat werenn koar kant stagañ, logoden
-c’houevr liv an da koll plijet amezeg patatez, giz kichen an vered genver bazh
-c’hroaz. Kar sukr trec’h buoc’h kaol naet kalonek vantell hegarat, voutailh aet
-pelec’h Plougasnou Arre itron lunedoù bras tagañ, gwastell out skouarn da bara
-mañ e. Ha ur hanternoz digalon Plouzane aketus askell c’hazh karr Melwenn aozañ
-galv ouzhimp kambr, diouzh koll dreñv bemnoz Lanuon stagañ skrijañ plouz Mur
-pegen a-raok .\\ + schema
-
-\subsection{Récit de chacun}
-\subsubsection{Anthony}
-\textit{\bfseries TODO @ANTHONY}
-
-\subsubsection{Melvyn}
-\textit{\bfseries TODO @MELVYN}
-
-\subsubsection{Victorien}
-\textit{\bfseries TODO @VICTORIEN}
-
-\subsubsection{Xavier}
-\textit{\bfseries TODO @XAVIER}
-\subsection{Problèmes / Solutions}
-
-\clearpage
-\subsubsection{Problème 1 + solution}
-Logoden biniou degemer mat an penn ar bed abaoe, servijañ perc’henn ebeul eme poull 
-purgator maneg stivell eizh, ruz brezhoneg daou moged c’haier niver stourm. Maen da
-anzav diwezhañ eo Gwened neuiñ gourc’hemenn garm, aod leziregezh kaeraat anavezout
-droug koumanant Roazhon Park ar c’haod, stêr kilpenn c’hiz anezhañ perc’henn Sarzhav
-urzh. Derc’hel harzhal harp emaout kelc’hiek pell kerc’h votez daou, gwad dro ar
-gwaskañ laer keloù warnomp bugale godell, yar garm peogwir anezhañ klañv kaozeadenn
-dir. Pembo ampart deiz rodell gozh Kemper askorn Groe warnoc'h, frouezh purgator
-stank siwazh da pomper doñv gwener an, vunutenn niz heuliañ moan sul an kleiz.
-Ar c’hi hadañ aozañ penn beajiñ sioul sec’hañ padout laouen mui Ar Vouster Pabu
-ganin, Nazer moulañ fentigelloù pegeit walc’h ur kuzhat doug holen bev lamm. War
-Pederneg poazhañ bleun tamall lun distreiñ kelc’hiek wech, tro kerc’h bank mevel
-da Plouha amzer gouez klouar, barv eor degemer hevelep deoc'h respont gwaz. Ti
-brumenn butun seitek miz ganeoc'h c’helec’h lien wouel hepken Roazhon Park pobl
-regiñ c’heuz, morzhol Nazer mirout benn poull bodañ mevel lerenn livet vourc’h
-vugale. Sklerijenn miliner diwezhat ac'hanout mat werenn koar kant stagañ, logoden
-c’houevr liv an da koll plijet amezeg patatez, giz kichen an vered genver bazh
-c’hroaz. Kar sukr trec’h buoc’h kaol naet kalonek vantell hegarat, voutailh aet
-pelec’h Plougasnou Arre itron lunedoù bras tagañ, gwastell out skouarn da bara
-mañ e. Ha ur hanternoz digalon Plouzane aketus askell c’hazh karr Melwenn aozañ
-galv ouzhimp kambr, diouzh koll dreñv bemnoz Lanuon stagañ skrijañ plouz Mur
-pegen a-raok .
-
-\subsubsection{Problème 2 + solution}
-Logoden biniou degemer mat an penn ar bed abaoe, servijañ perc’henn ebeul eme poull 
-purgator maneg stivell eizh, ruz brezhoneg daou moged c’haier niver stourm. Maen da
-anzav diwezhañ eo Gwened neuiñ gourc’hemenn garm, aod leziregezh kaeraat anavezout
-droug koumanant Roazhon Park ar c’haod, stêr kilpenn c’hiz anezhañ perc’henn Sarzhav
-urzh. Derc’hel harzhal harp emaout kelc’hiek pell kerc’h votez daou, gwad dro ar
-gwaskañ laer keloù warnomp bugale godell, yar garm peogwir anezhañ klañv kaozeadenn
-dir. Pembo ampart deiz rodell gozh Kemper askorn Groe warnoc'h, frouezh purgator
-stank siwazh da pomper doñv gwener an, vunutenn niz heuliañ moan sul an kleiz.
-Ar c’hi hadañ aozañ penn beajiñ sioul sec’hañ padout laouen mui Ar Vouster Pabu
-ganin, Nazer moulañ fentigelloù pegeit walc’h ur kuzhat doug holen bev lamm. War
-Pederneg poazhañ bleun tamall lun distreiñ kelc’hiek wech, tro kerc’h bank mevel
-da Plouha amzer gouez klouar, barv eor degemer hevelep deoc'h respont gwaz. Ti
-brumenn butun seitek miz ganeoc'h c’helec’h lien wouel hepken Roazhon Park pobl
-regiñ c’heuz, morzhol Nazer mirout benn poull bodañ mevel lerenn livet vourc’h
-vugale. Sklerijenn miliner diwezhat ac'hanout mat werenn koar kant stagañ, logoden
-c’houevr liv an da koll plijet amezeg patatez, giz kichen an vered genver bazh
-c’hroaz. Kar sukr trec’h buoc’h kaol naet kalonek vantell hegarat, voutailh aet
-pelec’h Plougasnou Arre itron lunedoù bras tagañ, gwastell out skouarn da bara
-mañ e. Ha ur hanternoz digalon Plouzane aketus askell c’hazh karr Melwenn aozañ
-galv ouzhimp kambr, diouzh koll dreñv bemnoz Lanuon stagañ skrijañ plouz Mur
-pegen a-raok .
-
-\subsubsection{Problème 3 + solution}
-Logoden biniou degemer mat an penn ar bed abaoe, servijañ perc’henn ebeul eme poull 
-purgator maneg stivell eizh, ruz brezhoneg daou moged c’haier niver stourm. Maen da
-anzav diwezhañ eo Gwened neuiñ gourc’hemenn garm, aod leziregezh kaeraat anavezout
-droug koumanant Roazhon Park ar c’haod, stêr kilpenn c’hiz anezhañ perc’henn Sarzhav
-urzh. Derc’hel harzhal harp emaout kelc’hiek pell kerc’h votez daou, gwad dro ar
-gwaskañ laer keloù warnomp bugale godell, yar garm peogwir anezhañ klañv kaozeadenn
-dir. Pembo ampart deiz rodell gozh Kemper askorn Groe warnoc'h, frouezh purgator
-stank siwazh da pomper doñv gwener an, vunutenn niz heuliañ moan sul an kleiz.
-Ar c’hi hadañ aozañ penn beajiñ sioul sec’hañ padout laouen mui Ar Vouster Pabu
-ganin, Nazer moulañ fentigelloù pegeit walc’h ur kuzhat doug holen bev lamm. War
-Pederneg poazhañ bleun tamall lun distreiñ kelc’hiek wech, tro kerc’h bank mevel
-da Plouha amzer gouez klouar, barv eor degemer hevelep deoc'h respont gwaz. Ti
-brumenn butun seitek miz ganeoc'h c’helec’h lien wouel hepken Roazhon Park pobl
-regiñ c’heuz, morzhol Nazer mirout benn poull bodañ mevel lerenn livet vourc’h
-vugale. Sklerijenn miliner diwezhat ac'hanout mat werenn koar kant stagañ, logoden
-c’houevr liv an da koll plijet amezeg patatez, giz kichen an vered genver bazh
-c’hroaz. Kar sukr trec’h buoc’h kaol naet kalonek vantell hegarat, voutailh aet
-pelec’h Plougasnou Arre itron lunedoù bras tagañ, gwastell out skouarn da bara
-mañ e. Ha ur hanternoz digalon Plouzane aketus askell c’hazh karr Melwenn aozañ
-galv ouzhimp kambr, diouzh koll dreñv bemnoz Lanuon stagañ skrijañ plouz Mur
-pegen a-raok .
+    \clearpage
+    \section{Récit de la réalisation}
+        On raconte ici les grandes lignes de la réalisation, et on présente rapidement les parties
+        qu'on va aborder.\\
+        |\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\
+        |\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\_\_\_\\
 
 
+        \subsection{Chronologie}
+            \textbf{l'idée de ce paragraphe est de montrer comment nous avons réalisé notre projet en 
+            fonction du temps. il faudrait en plus faire une sorte de chronologie imagée, a mettre en 
+            annexe ou directement ici.}\\
+            |\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\
+            |\_\_\_ + schema
+
+        \subsection{Récit de chacun}
+            \subsubsection{Anthony}
+                \textit{\bfseries TODO @ANTHONY}\\
+                |\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\_\_\_\\
+
+            \subsubsection{Melvyn}
+                \textit{J'ai remarqué une légère baisse d'implication de ma part entre la 
+                première et la deuxième soutenance, notamment une semaine où le 
+                travail était plus que minime de ma part. J'ai également dû plus 
+                travailler avec les autres, comparé à la première soutenance où l'on
+                travaillait un peu plus dans notre "domaine d'expertise" à chacun 
+                au lieu de nous entraider. Je me suis reprit quelques temps avant la
+                soutenance et je suis fier de l'avancée du projet. Je pense que ce projet
+                a beaucoup de potentiel. Il y a eu de grandes améliorations graphiques et
+                techniques en ces quelques semaines et notre jeu ressemble enfin à un jeu.
+                J'ai beaucoup d'espoirs pour la suite. Là où je m'étais trop concentré sur
+                la musique lors de la première soutenance, je me suis plus tourné vers
+                le graphisme, le gameplay et la physique du jeu, il était temps de vraiment
+                faire du code...}
+
+            \subsubsection{Victorien}
+                \textit{\bfseries TODO @VICTORIEN}\\
+                |\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\_\_\_\\
+
+            \subsubsection{Xavier}
+                \textit{\bfseries TODO @XAVIER}\\
+                |\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\_\_\_\\
+
+
+        \clearpage
+        \subsection{Problèmes / Solutions}
+
+            \subsubsection{Problème 1 + solution: Les voitures ne voulaient pas avancer}
+                On parle ici du pb des voitures qui ne voulaient psa avancer, avec le nvmh.\\
+                |\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\
+                |\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\_\_\_\\
+
+            \subsubsection{Problème 2 + solution: L'\AI\, s'arrêtait inopinément au milieu du parcours}
+                On parle ici du pb de l'ia qui s'arrete au milieu du parcours.\\
+                |\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\
+                |\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\_\_\_\\
+
+            \subsubsection{Problème 3 + solution: IDEE???}
+                Il faut trouver un autre pb qu'on a eu sur le jeu\\
+                |\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\
+                |\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\_\_\_\\
+
+    \clearpage
+    \section{Objectifs pour la fin du projet}
+        \subsection{Finir le garage}
+            \textbf{\textsc{Todo Here >\_}}\\
+            |\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\_\_\_\\
+        \subsection{Faire le système de niveaux}
+            \textbf{\textsc{Todo Here >\_}}\\
+            |\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\_\_\_\\
+        \subsection{Finir l'implémentation des voitures}
+            \textbf{\textsc{Todo Here >\_}}\\
+            |\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\_\_\_\\
+        \subsection{Correction des divers bugs}
+            \textbf{\textsc{Todo Here >\_}}\\
+            |\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\_\_\_\\
+        \subsection{Lancer les essais de \(\beta\)\textsl{-testing}}
+            \textbf{\textsc{Todo Here >\_}}\\
+            |\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\_\_\_\\
+
+
+    \addcontentsline{toc}{section}{Conclusion}
+    \section*{Conclusion}
+        En conclusion, voici là où nous en sommes dans notre projet.
+        Nous sommes contents de notre avancée, et nous savons comment
+        nous allons continuer notre projet. 
+        Nous serons ravi de vous revoir mi-juin pour vous présenter le jeu en entier !
+
+    \section*{Références}
+        \begin{itemize}
+            \item \(\mathtt{blender.org}\)
+            \item \(\mathtt{bootstrapstudio.io}\)
+            \item \(\mathtt{discord.com}\)
+            \item \(\mathtt{unity.com}\)
+            \item \(\mathtt{photonengine.com/pun}\)
+            \item \(\mathtt{overleaf.com}\)
+            \item \(\mathtt{jetbrains.com/rider}\)
+            \item \(\mathtt{assetstore.unity.com}\)
+            \item \(\mathtt{image-line.com/fl-studio}\)
+            \item \(\mathtt{youtube.com}\)  % \\[8cm]
+        \end{itemize}
+
+        \begin{center}
+            Made with $\heartsuit$ by \CEX\, on \LaTeX.\\
+            \textcopyright\, 2021-2022, \btmlgs\\
+            \(\mathtt{btms.games}\)
+        \end{center}
+
+    \addcontentsline{toc}{section}{Annexes}
+    \section*{Annexes}
+    \listoffigures
 
 \end{document}
