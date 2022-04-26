@@ -23,7 +23,9 @@
 \setlength\parindent{20pt}
 \newcommand{\btmlgs}{\textsl{Bitume Legends}}
 \newcommand{\AI}{Intelligence Artificielle}
+\newcommand{\FL}{\textsl{FL Studio 20}}
 \newcommand{\CEX}{\textsc{CarrEniX}}
+\newcommand{\SITE}{\(\mathtt{btms.games}\)}
 \pagestyle{fancy}
 \rhead{\btmlgs}
 \lhead{Rapport de Soutenance Intermédiaire}
@@ -52,7 +54,7 @@
         Victorien \textsc{Cambourian}\;--\;Xavier \textsc{de Place}
         \\ [4.5cm]
         EPITA INFOSUP 2026\\Année 2021 - 2022\\
-        \(\mathtt{btms.games}\)
+        \SITE
     \end{titlepage}
 
     \tableofcontents
@@ -61,50 +63,65 @@
     \addcontentsline{toc}{section}{Introduction}
     \section*{Introduction}
         Nous sommes le studio \CEX\, qui développe \btmlgs, un jeu de course automobile 3D en
-        \textit{low-poly}. Après avoir commencé le projet début janvier, et présenté notre avancée 
+        \textsl{low-poly}. Après avoir commencé le projet début janvier, et présenté notre avancée 
         mi-mars, nous publions notre second rapport. Il permet de faire le point sur ce que nous avons
-        fait, les objectifs atteints, les priorités ainsi que les ressources utilisés durant ce projet.
+        fait, les objectifs atteints, les priorités ainsi que les ressources utilisés durant ce 
+        projet.\\
+        Dans ce second rapport, nous allons aborder l'avancée de notre projet, les modifications que 
+        nous avons du apporter suite à la première soutenance, les problèmes et difficultés auxquels 
+        nous nous sommes confrontés, comment nous les avons les réglés, le ressenti des membres durant 
+        cette deuxième période ainsi que nos objectifs pour la troisième et dernière soutenance.
+
+    \section{Avancées}
+        Pour récapituler les avancées du projet, nous avons repris point par point les objectifs de 
+        notre rapport de première soutenance et nous avons comparé notre point d'avancement et nos prédictions.
+        Et le résultat est concluant:
         
-        \textbf{\(\Downarrow\) PLAN À CORRIGER SI BESOIN \(\Downarrow\)}\\
-        Dans ce rapport, nous allons aborder l'avancée de notre projet, l'organisation de notre groupe,
-        les ressources et créations de chacun des membres du groupe ainsi que leurs valeurs 
-        ajoutées, le ressenti des membres durant cette première période et nos objectifs.
-
-    \section{Avancée par rapport aux attentes}
-        \textbf{Nous reprenons point par point le précédent rapport et nous vérifions que chaque objectif
-        posé dans celui-ci est bien accompli.}
-
-
-        \subsection{Finir le menu}
-            \textbf{\textsc{Todo Here @Victorien / @Melvyn}}\\
-            Pour la première soutenance, nous avons fait une charte graphique et un design pour les menus.
-            Nous nous étions concentrés sur le menu principal. Pour cette seconde soutenance, nous avons travaillé les
+        \subsection{Site Web}
+            Pour ce qui est du site Web, la mise en page de ce dernier était déjà bien avancée. 
+            Cependant, quelques ajouts ont été fait, notamment pour permettre la finalisation de la 
+            page ressources, qui contient tous les outils que nous avons utilisé pour réaliser notre 
+            jeu. De plus, la page réalisation a été terminé avec l'ajout de la partie 
+            problèmes et solutions.
+            Enfin, pour ce qui est de la partie la plus difficile du site Web, le \textsl{responsive 
+            design}, (qui est de rendre le site Web adaptable à toutes tailles d'écran), l'utilisation 
+            du code HTML était indispensable. Nous avons donc cherché à comprendre comment le 
+            \textsl{responsive} fonctionnait à l'aide de tutoriels et implémenté chaque élément 
+            pour les rendre indépendants entre eux et ainsi obtenir notre site Web \textsl{responsive}.
+        
+        \subsection{Menu}
+            Pour la première soutenance, nous avons fait une charte graphique et un design pour les 
+            menus.
+            Nous nous étions concentrés sur le menu principal. Pour cette seconde soutenance, nous 
+            avons travaillé les
             sous-menus des différents modes de jeu et les fonctionnalités internes.\\
-            % Dans le menus principal nous avons ajouté la barre d'expérience (voir \textbf{1.5 Gameplay}).
-            Nous avons également implémenté le garage, permettant de
-            sélectionner une voiture pour la course parmi une liste de voitures disponibles, qui
+            Nous avons implémenté le garage, permettant de
+            sélectionner une voiture pour la course parmi la liste de voitures disponibles, qui
             est ensuite sauvegardée. La voiture sélectionnée s'affiche ensuite dans le menu principal
             à la place du logo du jeu. Les menus des modes de
             jeux \textsl{Timer} (course contre la montre) et \textsl{Solo} (contre une \AI) ont
             été implémentés de la même manière. Ils ont donc une structure similaire. Au sein de
-            ces menus, nous retrouvons la sélection des circuits et de la difficulté de la course.\\
-            Nous avons également mis en place un système de gestion des musiques faisant en sorte
-            que la musique continue sans interruption tout en se baladant dans les menus et
-            effectuant la transition entre eux.\\
-            |\dots\\|\_\_\_\\
+            ces menus, nous retrouvons la sélection des circuits ainsi que la difficulté de la course et
+            un moyen de revenir au menu précédent.\\
+            Nous comptons ajouté un menu de réglages permettant de régler le volume du jeu, le volume
+            des musiques, les touches permettant d'avancer ainsi que de changer de pseudo. Une 
+            version simplifiée de ce menu, contenant la modification des touches de directions et le
+            volume du jeu sera également disponible en course.
 
 
-        \subsection{Finir le site Web}
-            \textbf{\textsc{Todo Here @Anthony}}\\
-            |\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\_\_\_\\
+        \subsection{Musiques}
+            Notre jeu comporte des musiques originales composées sur \FL\, par Melvyn. Un objectif d'un 
+            peu moins de 5 musiques différentes a été posé dans le cahier des charges. Suite aux 
+            commentaires de la première soutenance où il nous a été demandé de plus se concentrer sur le
+            jeu, seules une musique de menu et une musique de course ont été composées. Toutefois, nous 
+            tenions à ce qu'il y ai des nouveautés sur l'aspect de l'ambiance du jeu. Alors un travail 
+            sur l'implémentation de ces musiques a été faite, notamment lors du passage d'une scène à
+            une autre sans que la musique ne cesse ou recommence depuis le début. Pour la troisième 
+            soutenance, l'objectif des musiques sera rempli avec un système de sélection des musiques 
+            avec la possibilité de modifier le volume de la musique dans un sous-menus de réglages comme
+            dit ci-dessus dans la section menu.
 
-
-        \subsection{Continuer les musiques}
-            \textbf{\textsc{Todo Here @Melvyn}}\\
-            |\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\_\_\_\\
-
-
-        \subsection{Implémentation de l'\AI}
+        \subsection{\AI}
             L'implémentation de l'\AI\, s'est bien déroulée. Nous avons pris du temps
             à nous décider sur quelle solution nous allons utiliser et sur comment
             l'\AI\, devrait se comporter une fois implémentée dans le jeu. Nous sommes partis sur une
@@ -119,50 +136,49 @@
             précision, pour éviter qu'elle rentre dans chaque mur par souci de freinage en virage.\\
             Après ces quelques soucis, nous avons obtenu un mode \textsl{Solo} pratiquement
             fonctionnel. Nous avons rajouté à ceci les scripts qui nous permettent de gérer
-            le départ et la fin de la course et nous étions bons.\\
+            le départ et la fin de la course et nous étions bons.
 
 
         \subsection{Gameplay}
-            \textbf{On parle ici de tt ce qui touche la course, donc le start, le win, les visuels et tt
-            le reste avec l'expérience, on dit que conformément au CdC, on le fait en sprint 4.}\\
             En début de course, un décompte avant le départ est donné, bloquant la voiture pour 
-            empêcher les faux départs. Tout au long du circuit, le joueur doit traverser une série de balises,
-            les \textsl{checkpoints}, pour valider la course. Cela permet d'empêcher le joueur
-            de simplement faire demi-tour et de traverser la ligne d'arrivée pour gagner, ou
-            de couper le circuit. Ici le joueur est forcé de passer par chaque \textsl{checkpoints},
+            empêcher les faux départs. Tout au long du circuit, le joueur doit traverser une série de 
+            balises, les \textsl{check-points}, pour valider la course. Cela permet d'empêcher le 
+            joueur de simplement faire demi-tour et de traverser la ligne d'arrivée pour gagner, ou
+            de couper le circuit. Ici le joueur est forcé de passer par chaque \textsl{check-points},
             dans le bon sens afin de pouvoir terminer la course.\\
             Chaque mode de jeu (hors multijoueur) comprend une sélection de difficulté.
-            La difficulté pour le mode de jeu \textsl{Timer} est déterminée par le temps
-            donné pour terminer la course. En revanche, pour le mode de jeu \textsl{Solo}, 
-            elle réside dans la vitesse et la précision de l'\AI. \\
-            Grâce aux résultats de la course, le joueur gagne de l'expérience
-            en fonction de la difficulté de celle-ci. Cette expérience permet de débloquer
-            de nouvelles voitures ou de les améliorer. Le niveau relatif à la quantité d'expérience
-            du joueur est déterminé par une fonction mathématique, afin que l'on ne monte pas
-            trop rapidement en niveau. Bien que répétitif, ce système permet au joueur de
-            s'améliorer et de se familiariser avec les contrôles du jeu et des voitures,
-            ce qui est idéal pour battre ses amis en course.
+            La difficulté pour le mode de jeu \textsl{Timer} est déterminée par le temps maximum pour 
+            terminer la course. En revanche, pour le mode de jeu \textsl{Solo}, 
+            elle réside dans la vitesse et la précision de l'\AI, ce qui permet d'affronter des 
+            \textsl{bots} plus
+            ou moins forts. \\
+            En mode \textsl{Solo}, la course est gagnée si l'on est arrivé en premier ou que l'on a 
+            survécu au \textsl{Bot} qui peut nous infliger des dégâts. En mode \textsl{Timer}, elle 
+            est gagnée lorsque l'on passe la ligne d'arrivée (et toutes les balises précédentes) avant
+            la fin du temps imparti. En cas de défaite, pour chacun de ces deux modes de jeu la partie
+            est terminée et l'on peut soit recommencer la course, soit revenir au menu pour changer de
+            véhicule, de circuit ou de difficulté.\\
 
 
     \clearpage
     \section{Récit de la réalisation}
-        \textbf{On raconte ici les grandes lignes de la réalisation, et on présente rapidement les parties
-        qu'on va aborder.\\}
-        |\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\
-        |\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\_\_\_\\
+        \textbf{On raconte ici les grandes lignes de la réalisation, et on présente rapidement les 
+        parties qu'on va aborder.\\}
 
-
-        \subsection{Chronologie}
-            \textbf{l'idée de ce paragraphe est de montrer comment nous avons réalisé notre projet en 
-            fonction du temps. il faudrait en plus faire une sorte de chronologie imagée, a mettre en 
-            annexe ou directement ici.}\\
-            |\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\
-            |\_\_\_ + schema
 
         \subsection{Point de vue de chacun}
             \subsubsection{Anthony}
-                \textit{\bfseries TODO @ANTHONY}\\
-                |\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\_\_\_\\
+                \textit{Au sujet du site Web, j'ai eu beaucoup de mal à implémenter le responsive design
+                puisque l'application Bootstrap Studio 5 ne suffisait pas, et l'usage du code HTML était
+                obligatoire. Ayant peu de connaissance dans ce dernier langage, j'ai donc demandé
+                de l'aide à mon groupe pour m'aider à le mettre en place. Ainsi après avoir compris le
+                code généré par Bootstrap pour transformer chaque élément en responsive, d'autre
+                problèmes de mise en forme ont complexifié la tâche entre les éléments responsive et
+                non. De plus, la cohésion d'équipe a été fortement accentué, ce qui a permis de régler 
+                les problèmes beaucoup plus rapidement. C'est pourquoi une grande avancée dans le 
+                jeu vidéo s'est fait ressentir par rapport à la soutenance 1. Du fait de cette avancée, 
+                ma motivation et l'envie de faire de Bitume Legends un bon jeu de voiture sera plus 
+                forte pour la soutenance 3.}
 
             \subsubsection{Melvyn}
                 \textit{J'ai remarqué une légère baisse d'implication de ma part entre la 
@@ -181,44 +197,79 @@
 
             \subsubsection{Victorien}
                 \textit{Suite à la première soutenance, la première idée que j'ai eu a été
-                de vouloir pousser le jeu, le développer et s'amuser dessus. Le but étant
+                de vouloir développer le jeu et s'amuser dessus. Le but étant
                 d'avoir un jeu plaisant, joli et agréable à jouer. J'ai donc passer
-                de nombreuses heures (entre autres durant les vacances) à implémenter
-                les différents modes de jeu, résoudre les \textsl{bug}. Je suis très satisfait
-                de mon travail. C'est un vrai plaisir de coder le jeu et de voir notre
-                avancée. Là où au départ \btmlgs n'avait pas forcément de style et
+                de nombreuses heures à implémenter les différents modes de jeu, résoudre les 
+                \textsl{bugs}. 
+                Je suis très satisfait de mon travail. De plus, ceci m'a permit de m'améliorer en 
+                \textsl{C\#} ainsi qu'en programmation orientée objet. C'est un vrai plaisir de coder 
+                le jeu et de voir notre travail
+                porter ses fruits. Là où au départ \btmlgs\, n'avait pas forcément de style et
                 n'attirait pas l'œil, il est maintenant beaucoup plus attractif suite à
-                la refonte graphique du jeu ainsi que notre avancée. }
+                la refonte graphique du jeu ainsi que notre avancée.}
 
             \subsubsection{Xavier}
                 \textit{Depuis la dernière soutenance, je me suis bien amusé à faire l'\AI.
                 Cela était sympa au début puis plus le temps avançait, plus les problèmes arrivaient.
                 Cela m'a fait passé par tous les états possibles, de la joie intense à la dépression
-                profonde. Malgré cela, l'IA a sûrement été la partie que j'ai préféré faire.
-                Pour le reste, je suis très fier de l'avancée que nous avons, nous sommes à jour sur notre
-                planning et le jeu est très plaisant à jouer. Nous sommes très content de ce que rendent
-                les graphiques et les voitures, ce qui était le point noir de la dernière soutenance.
-                Bref, le jeu va vraiment être super sympa et cela nous rend heureux ! }
-                
+                profonde. Malgré cela, l'\AI a sûrement été la partie que j'ai préféré faire.
+                Pour le reste, je suis très fier de l'avancée que nous avons, nous sommes à jour sur 
+                notre planning et le jeu est très plaisant à jouer. Nous sommes très content de ce que 
+                rendent les graphiques et les voitures, ce qui était le point noir de la dernière 
+                soutenance. Bref, le jeu va vraiment être super sympa et cela nous rend heureux ! }
 
 
         \clearpage
-        \subsection{Problèmes / Solutions}
+        \subsection{Problèmes et Solutions}
+            \subsubsection{Implémentation des voitures}
+                L'implémentation de la physique de voitures fut complexe, en particulier au vu des 
+                nombreuses variables impactant le comportement d'une voiture. Il a fallut gérer le 
+                poids, la vitesse, la puissance en chevaux du moteur, le couple maximum, l'angle et la 
+                vitesse de braquage pour la direction, la force et la vitesse de freinage ou encore 
+                l'inertie du moteur et la hauteur du centre de gravité.\\
+                Suite à l'implémentation de la physique des voitures, nous nous sommes rendu compte que 
+                les modèles des voitures que nous avions ne permettaient pas son bon fonctionnement. Il 
+                a fallu dans un premier temps modifier les \textsl{prefabs} des voitures, entre autres 
+                leurs \textsl{rigidify} qui empêchaient les roues de tourner et de considérer qu'elles 
+                touchaient le sol. Suite à cela, il a fallu également modifier les roues des voitures en
+                unifiant la jante ainsi que le pneu, chose qui n'était pas faite avant pour pouvoir 
+                entraîner l'essieu et synchroniser la direction. Après avoir trouvé ce problème sur une 
+                voiture, il a fallu l'appliquer aux autres, ce qui explique également pourquoi les 
+                voitures ont pour l'instant la même physique. Toutefois, les voitures ainsi que les 
+                collisions sont fonctionnelles.\\
+                Un autre problème fût aussi celui du sound-design de la voiture. Plusieurs éléments dans
+                une voiture produisent du son et n'ont pas le même comportement en fonction du poids et
+                la vitesse du véhicule ou encore de la puissance du moteur. Il a fallut gérer le passage
+                des rapports, le bruit du moteur dont le \textsl{pitch} et le volume changeait selon la
+                vitesse ou le type du véhicule (un pick-up a un bruit différent d'une Supercar). Avec le
+                passage de rapport il y avait également le bruit du turbocompresseur ou du
+                supercompresseur à gérer.\\
+                Au final nous avons trouvé certains paramètres permettant à la voiture d'avoir un bon
+                comportement et d'avoir un bon son. Il ne nous reste plus qu'à appliquer ces paramètres
+                aux autres voitures.
 
-            \subsubsection{Problème 1 + solution: Les voitures ne voulaient pas avancer}
-                On parle ici du pb des voitures qui ne voulaient psa avancer, avec le nvmh.\\
+            \subsubsection{\AI}
+                On parle ici du pb de l'ia qui s'arrête au milieu du parcours.\\
                 |\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\
                 |\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\_\_\_\\
 
-            \subsubsection{Problème 2 + solution: L'\AI\, s'arrêtait inopinément au milieu du parcours}
-                On parle ici du pb de l'ia qui s'arrete au milieu du parcours.\\
-                |\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\
-                |\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\_\_\_\\
-
-            \subsubsection{Problème 3 + solution: IDEE???}
-                Il faut trouver un autre pb qu'on a eu sur le jeu\\
-                |\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\
-                |\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\_\_\_\\
+            \subsubsection{Implémentation des musiques}
+                Pour les menus nous avons préféré créer plusieurs scènes pour les sous-menus accessibles
+                par le menu principal. Plutôt qu'une seule scène se transformant à l'appui d'un bouton.
+                Bien que pratique pour les scripts individuels à chaque modes de jeux et sous-menus,
+                cela compliquait l'implémentation de la musique. Il a fallu trouver un moyen d'empêcher
+                les musiques de s'arrêter à chaque entrée dans un menu ou sous-menus. Pour cela il
+                fallait faire en sorte que la musique fasse partie des éléments
+                \textsl{DontDestroyOnLoad}.\\
+                Un problème qui a suivi est le fait que bien que la musique ne s'arrête plus, à chaque
+                ouverture d'un menu une autre instance de la musique se lançait. Pour remédier à cela il
+                a fallut préciser dans le script que toute nouvelles musique dans ne scène de menu ne
+                devait pas se lancer si une autre se jouait déjà.\\
+                Enfin un dernier problème a eu lieu lors de l'implémentation des musiques de courses. La
+                musique de menu continuait de jouer par dessus celle de course. Il a alors fallut
+                ajouter dans le script le cas où lorsque l'on était en course, il fallait mettre un
+                \textsl{SetActive} sur la musique en train de jouer et la désactiver si l'on entrait en
+                course, la musique précédente étant celle des menus.
 
     \clearpage
     \section{Objectifs pour la fin du projet}
@@ -233,41 +284,59 @@
             seront grisées, celles achetables auront un cadenas et une option d'achat.
             Nous pourrons également voir les statistiques des voitures telles que leur vitesse,
             leur masse, leur accélération, etc. De plus à le joueur pourra également décider
-            d'améliorer ces statistiques ainsi que l'aspect visuel de sa voiture avec l'argent
+            d'améliorer les statistiques de ses voitures ainsi que leur aspect visuel avec l'argent
             du jeu. En effet, il est logique qu'un jeu de voiture comporte des options de
             \textsl{tuning}.
         
-
         \subsection{Faire le système de niveaux}
-            \textbf{\textsc{Todo Here >\_}}\\
-            |\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\_\_\_\\
+            Grâce aux résultats de la course, le joueur gagne de l'expérience en fonction de la
+            difficulté de celle-ci. Cette expérience permet de débloquer de nouvelles voitures
+            ou de les améliorer. La quantité d'expérience nécessaire du joueur pour passer un palier
+            sera déterminé par une fonction exponentielle, afin que l'on ne monte pas trop rapidement 
+            en niveau. Bien que répétitif, ce système permet au joueur 
+            de s'améliorer et de se familiariser avec les contrôles du 
+            jeu et des voitures, ce qui selon nous est idéal pour battre ses amis en course.
             
         \subsection{Finir l'implémentation des voitures}
            Pour l'instant, les voitures ont toutes la même physique. C'est à dire le même
-           centre de gravité, quasiment la même masse, puissance, inertie moteur, adhérence sur le sol.
+           centre de gravité, quasiment la même masse, puissance, inertie moteur, adhérence sur le 
+           sol.
            Étant donné que nous voulons utilisé des données réalistes pour chaque voiture,
-           nous allons devoir nous occuper de gérer la physique pour les vingt-cinq voitures,
+           nous allons devoir nous occuper de gérer la physique pour les autres voitures,
            car deux seulement sont prêtes actuellement.
-            
-        \subsection{Correction des divers bugs}
-            \textbf{\textsc{Todo Here >\_}}\\
-            |\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\_\_\_\\
             
         \subsection{Lancer les essais de \(\beta\)\textsl{-testing}}
             Suite à la première soutenance, le jeu n'était selon nous pas assez concluant
-            pour lancer le système de \(\beta\)\textsl{-testing} au public. Nous avons
-            décidé de garder le système de \(\beta\)\textsl{-testing} privé jusqu'à maintenant,
-            puisqu'il n'y avait qu'un mode de jeu disponible. Grâce à notre réseau d'amis, 
-            nous allons avoir des retours positifs et négatifs sur le jeu afin de débusquer
-            chaque bug et pouvoir appliquer chaque amélioration demandée.
+            pour lancer le système de \(\beta\)\textsl{-testing} au public. Nous avons donc
+            décidé de garder ce système privé puisqu'il n'y avait qu'un mode de jeu terminé de
+            disponible, les autres modes de jeu n'ayant qu'une base permettant de les faire fonctionner.
+            Bien que nous avons inviter chacun un proche à rejoindre ce système, nous comptons lancer le
+            \(\beta\)\textsl{-testing} au grand public début mai grâce à notre réseau d'amis ainsi que
+            notre compte Instagram. Les avis seront récoltés sur notre site Web, directement dans le jeu
+            depuis le menu mais encore sur notre serveur Discord, accessible depuis notre site internet
+            et notre compte Instagram. Avec ces retours positifs et négatifs sur le jeu nous comptons
+            débusquer chaque bug et pouvoir appliquer chaque amélioration demandée.
+        
+        \subsection{Correction des divers bug}
+            Comme tout programme informatique, notre jeu comporte divers problèmes, que nous n'avons pas
+            tous identifié. Pour les trouver, nous avons nos tests internes (tester les parties du jeu
+            au fur et à mesure de l'implémentation) mais aussi les tests externes, à savoir le
+            \(\beta\)\textsl{-testing} précédemment expliqué.
+            Cet objectif sera de corriger le maximum de bugs le mieux possible sans pour autant ne plus
+            faire fonctionner le reste du jeu et d'implémenter ceux qui restent comme de véritables
+            caractéristiques du jeu. (\textit{ce n'est pas un bug, c'est une feature.})
 
 
     \addcontentsline{toc}{section}{Conclusion}
     \section*{Conclusion}
-        En conclusion, voici là où nous en sommes dans notre projet.
+        Une grande avancée en matière de graphisme et surtout de \textsl{Gameplay} a été faite depuis la
+        première soutenance. Nous comptons continuer dans cette voie pour la troisième en ajoutant des 
+        détails afin que le jeu puisse gagner son identité en matière de \textsl{Gameplay}, de graphisme, 
+        de musique et de sa communauté.\\
+        Voici là où nous en sommes dans notre projet.
         Nous sommes contents de notre avancée, et nous savons comment
         nous allons continuer notre projet. 
-        Nous serons ravi de vous revoir mi-juin pour vous présenter le jeu en entier !
+        Nous serons ravi de vous revoir mi-juin pour vous présenter le jeu complet !
 
     \section*{Références}
         \begin{itemize}
@@ -280,13 +349,14 @@
             \item \(\mathtt{jetbrains.com/rider}\)
             \item \(\mathtt{assetstore.unity.com}\)
             \item \(\mathtt{image-line.com/fl-studio}\)
-            \item \(\mathtt{youtube.com}\)  % \\[8cm]
+            \item \(\mathtt{youtube.com}\)
+            \item \(\mathtt{github.com}\) % \\[8cm]
         \end{itemize}
 
         \begin{center}
             Made with $\heartsuit$ by \CEX\, on \LaTeX.\\
             \textcopyright\, 2021-2022, \btmlgs\\
-            \(\mathtt{btms.games}\)
+            \SITE
         \end{center}
 
     \addcontentsline{toc}{section}{Annexes}
