@@ -74,8 +74,8 @@
 
     \section{Avancées}
         Pour récapituler les avancées du projet, nous avons repris point par point les objectifs de 
-        notre rapport de première soutenance et nous avons comparé notre point d'avancement et nos prédictions.
-        Et le résultat est concluant:
+        notre rapport de première soutenance et nous avons comparé notre point d'avancement et nos 
+        prédictions. Et le résultat est concluant:
         
         \subsection{Site Web}
             Pour ce qui est du site Web, la mise en page de ce dernier était déjà bien avancée. 
@@ -121,11 +121,12 @@
             avec la possibilité de modifier le volume de la musique dans un sous-menus de réglages comme
             dit ci-dessus dans la section menu.
 
+
         \subsection{\AI}
             L'implémentation de l'\AI\, s'est bien déroulée. Nous avons pris du temps
             à nous décider sur quelle solution nous allons utiliser et sur comment
             l'\AI\, devrait se comporter une fois implémentée dans le jeu. Nous sommes partis sur une
-            solution hybride entre celle intégrée dans \textsl{Unity} et une \textsl{Homemade}.
+            solution hybride entre celle intégrée dans \textsl{Unity} et une \textsl{homemade}.
             Nous nous sommes basé sur le \textsl{NavMesh} de \textsl{Unity}, puis nous avons
             travailler à animer la voiture et à définir les points qu'elle devait franchir pour
             terminer le circuit.  Ensuite est arrivée
@@ -140,7 +141,7 @@
 
 
         \subsection{Gameplay}
-            En début de course, un décompte avant le départ est donné, bloquant la voiture pour 
+            En début de course, un décompte avant le départ est donné, bloquant la voiture pour
             empêcher les faux départs. Tout au long du circuit, le joueur doit traverser une série de 
             balises, les \textsl{check-points}, pour valider la course. Cela permet d'empêcher le 
             joueur de simplement faire demi-tour et de traverser la ligne d'arrivée pour gagner, ou
@@ -158,12 +159,34 @@
             la fin du temps imparti. En cas de défaite, pour chacun de ces deux modes de jeu la partie
             est terminée et l'on peut soit recommencer la course, soit revenir au menu pour changer de
             véhicule, de circuit ou de difficulté.\\
+            
+            
+            \subsection{Graphisme}
+                Au lancement du projet, nous voulions créer nous même nos voitures et nos circuit à 
+                l'aide du logiciel de modélisation 3D Blender. Toutefois, cela prends beaucoup de temps,
+                temps qui n'est pas utilisé à coder le jeu, résoudre des bugs, etc. Nous avons donc fait
+                un compromis entre notre volonté de créer nous même le design du jeu et la contrainte de
+                temps. Nous nous sommes orientés alors sur l'ajout d'un \textsl{asset} du \textsl{Uni
+                Asset Store}, pour obtenir des voitures et des morceaux de pistes. Ceci nous a permis de
+                créer directement dans \textsl{Unity} nos différents circuits et de gagner beaucoup de 
+                temps. 
+            
+            \subsection{Sauvegarde}
+                Pour que notre jeu soit plus facile à appréhender, nous avons créé un système de 
+                sauvegarde. Il est composé de 2 principe : le \textsl{Save}, qui permet d'enregistrer 
+                les données voulues et nécessaires pour le bon fonctionnement du jeu, ainsi que le 
+                \textsl{Load}, qui permet de charger la sauvegarde lors du lancement du jeu. Pour le 
+                moment, il s'occupe uniquement de sauvegarder quelle voiture a été choisie dans le 
+                garage et de l'enregistrer pour la charger lors du prochain lancement du jeu. À terme, 
+                nous comptons sauvegarder l'expérience du joueur, son pseudo, ainsi que la possible 
+                customisation de ses voitures.
 
 
     \clearpage
     \section{Récit de la réalisation}
         \textbf{On raconte ici les grandes lignes de la réalisation, et on présente rapidement les 
         parties qu'on va aborder.\\}
+        \textsc{@MELVYN}
 
 
         \subsection{Point de vue de chacun}
@@ -177,8 +200,8 @@
                 non. De plus, la cohésion d'équipe a été fortement accentué, ce qui a permis de régler 
                 les problèmes beaucoup plus rapidement. C'est pourquoi une grande avancée dans le 
                 jeu vidéo s'est fait ressentir par rapport à la soutenance 1. Du fait de cette avancée, 
-                ma motivation et l'envie de faire de Bitume Legends un bon jeu de voiture sera plus 
-                forte pour la soutenance 3.}
+                ma motivation et l'envie de faire de Bitume Legends un bon jeu de voiture est encore 
+                plus forte que précédemment.}
 
             \subsubsection{Melvyn}
                 \textit{J'ai remarqué une légère baisse d'implication de ma part entre la 
@@ -230,7 +253,7 @@
                 Suite à l'implémentation de la physique des voitures, nous nous sommes rendu compte que 
                 les modèles des voitures que nous avions ne permettaient pas son bon fonctionnement. Il 
                 a fallu dans un premier temps modifier les \textsl{prefabs} des voitures, entre autres 
-                leurs \textsl{rigidify} qui empêchaient les roues de tourner et de considérer qu'elles 
+                leurs \textsl{rigibody} qui empêchaient les roues de tourner et de considérer qu'elles 
                 touchaient le sol. Suite à cela, il a fallu également modifier les roues des voitures en
                 unifiant la jante ainsi que le pneu, chose qui n'était pas faite avant pour pouvoir 
                 entraîner l'essieu et synchroniser la direction. Après avoir trouvé ce problème sur une 
@@ -249,27 +272,50 @@
                 aux autres voitures.
 
             \subsubsection{\AI}
-                On parle ici du pb de l'ia qui s'arrête au milieu du parcours.\\
-                |\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\
-                |\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\dots\\|\_\_\_\\
+                En implémentant notre IA, nous avons plein de problèmes divers et variés. Pour 
+                commencer, les voitures autonomes ne voulaient pas passer par les bons endroits. Elles 
+                faisaient demi-tour sur la ligne de départ et passaient à travers les murs ou entre les 
+                plots et se stoppaient sans raison au milieu du circuit. Pour résoudre ce problème, nous
+                avons compris comment fonctionnait le \textsl{NavMesh} puis appris à séparer les 
+                différentes couches de circuit, ce sur quoi la voiture peut rouler et les obstacles. Le 
+                \textsl{NavMesh} est un calque qui est apposé au dessus du circuit et qui permet de
+                définir une zone sur laquelle les voitures autonomes peuvent rouler et calculer leur
+                itinéraire. Après cela, nous avons recalculé le \textsl{NavMesh} et remis des plots
+                ou des barrières là où c'était nécessaire.\\
+                Le deuxième problème consistait en un arrêt inattendu et systématique au milieu du 
+                circuit. Pour trouver comment résoudre ce problème, nous avons testé plusieurs choses, 
+                comme vérifier si la direction de la voiture était la bonne, puis si les 
+                \textsl{checkpoints} fonctionnaient correctement. Après de longues recherches 
+                infructueuses, nous avons trouvé que le problème était lié à l'absence de composants 
+                dans la voiture, permettant de comptabiliser les collisions avec les 
+                \textsl{checkpoints}. Nous avons donc rajouté ce composant et changé la façon de définir
+                une trajectoire. Et après ce travail, les voitures autonomes arrivent à la fin du 
+                circuit.
 
             \subsubsection{Implémentation des musiques}
                 Pour les menus nous avons préféré créer plusieurs scènes pour les sous-menus accessibles
-                par le menu principal. Plutôt qu'une seule scène se transformant à l'appui d'un bouton.
+                par le menu principal., plutôt qu'une seule scène qui se transforme à l'appui d'un 
+                bouton sur le menu.
                 Bien que pratique pour les scripts individuels à chaque modes de jeux et sous-menus,
                 cela compliquait l'implémentation de la musique. Il a fallu trouver un moyen d'empêcher
-                les musiques de s'arrêter à chaque entrée dans un menu ou sous-menus. Pour cela il
+                les musiques de s'arrêter à chaque chargement d'un nouveau menu. Pour cela il
                 fallait faire en sorte que la musique fasse partie des éléments
-                \textsl{DontDestroyOnLoad}.\\
+                \textsl{DontDestroyOnLoad}, qui permet qu'une fois la musique chargé, elle restera 
+                possible d'accès
+                même après changement de scène. Il nous a ensuite fallu dans le script s'occupant de la 
+                musique, de lui faire référence et de lui dire de ne pas s'arrêter lors d'un changement
+                de scène.\\
                 Un problème qui a suivi est le fait que bien que la musique ne s'arrête plus, à chaque
                 ouverture d'un menu une autre instance de la musique se lançait. Pour remédier à cela il
                 a fallut préciser dans le script que toute nouvelles musique dans ne scène de menu ne
                 devait pas se lancer si une autre se jouait déjà.\\
                 Enfin un dernier problème a eu lieu lors de l'implémentation des musiques de courses. La
                 musique de menu continuait de jouer par dessus celle de course. Il a alors fallut
-                ajouter dans le script le cas où lorsque l'on était en course, il fallait mettre un
-                \textsl{SetActive} sur la musique en train de jouer et la désactiver si l'on entrait en
-                course, la musique précédente étant celle des menus.
+                ajouter dans le script le cas où lorsque l'on était en course, il fallait mettre la 
+                propriété \textsl{SetActive}, qui permet d'activer ou désactiver un élément. Par 
+                exemple, si l'on entrait en course, il a fallu désactiver la musique de menu et activer 
+                la musique de course.
+
 
     \clearpage
     \section{Objectifs pour la fin du projet}
@@ -287,7 +333,7 @@
             d'améliorer les statistiques de ses voitures ainsi que leur aspect visuel avec l'argent
             du jeu. En effet, il est logique qu'un jeu de voiture comporte des options de
             \textsl{tuning}.
-        
+
         \subsection{Faire le système de niveaux}
             Grâce aux résultats de la course, le joueur gagne de l'expérience en fonction de la
             difficulté de celle-ci. Cette expérience permet de débloquer de nouvelles voitures
@@ -296,6 +342,7 @@
             en niveau. Bien que répétitif, ce système permet au joueur 
             de s'améliorer et de se familiariser avec les contrôles du 
             jeu et des voitures, ce qui selon nous est idéal pour battre ses amis en course.
+            Ce niveau sera stocké dans le système de sauvegarde du jeu.
             
         \subsection{Finir l'implémentation des voitures}
            Pour l'instant, les voitures ont toutes la même physique. C'est à dire le même
@@ -304,7 +351,7 @@
            Étant donné que nous voulons utilisé des données réalistes pour chaque voiture,
            nous allons devoir nous occuper de gérer la physique pour les autres voitures,
            car deux seulement sont prêtes actuellement.
-            
+
         \subsection{Lancer les essais de \(\beta\)\textsl{-testing}}
             Suite à la première soutenance, le jeu n'était selon nous pas assez concluant
             pour lancer le système de \(\beta\)\textsl{-testing} au public. Nous avons donc
@@ -316,7 +363,7 @@
             depuis le menu mais encore sur notre serveur Discord, accessible depuis notre site internet
             et notre compte Instagram. Avec ces retours positifs et négatifs sur le jeu nous comptons
             débusquer chaque bug et pouvoir appliquer chaque amélioration demandée.
-        
+
         \subsection{Correction des divers bug}
             Comme tout programme informatique, notre jeu comporte divers problèmes, que nous n'avons pas
             tous identifié. Pour les trouver, nous avons nos tests internes (tester les parties du jeu
@@ -331,8 +378,8 @@
     \section*{Conclusion}
         Une grande avancée en matière de graphisme et surtout de \textsl{Gameplay} a été faite depuis la
         première soutenance. Nous comptons continuer dans cette voie pour la troisième en ajoutant des 
-        détails afin que le jeu puisse gagner son identité en matière de \textsl{Gameplay}, de graphisme, 
-        de musique et de sa communauté.\\
+        détails afin que le jeu puisse gagner son identité en matière de \textsl{Gameplay}, de 
+        graphisme, de musique et de sa communauté.\\
         Voici là où nous en sommes dans notre projet.
         Nous sommes contents de notre avancée, et nous savons comment
         nous allons continuer notre projet. 
