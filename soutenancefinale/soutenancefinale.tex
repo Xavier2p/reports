@@ -1,42 +1,77 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Soutenance Finale 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Soutenance Finale
 % Bitume Legends Project
 % CarrEniX
 % Juin 2022
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Packages
-\documentclass[11pt,a4paper]{article}
-\usepackage{mathtools}
+
+\documentclass[a4paper,12pt]{article}
+
+% Mise en page française
 \usepackage[utf8]{inputenc}
-\usepackage{graphicx}
 \usepackage[french]{babel}
+\usepackage{geometry}
+\usepackage{lipsum}
+\usepackage{mathtools}
 \usepackage[T1]{fontenc}
 \usepackage{url}
-% \usepackage{fancyhdr}
-% \usepackage{blindtext}
+\usepackage{longtable}
+\usepackage[aboveskip=.5cm]{caption}
+\usepackage{pdflscape}
+\usepackage{xcolor}
 
-% Global settings of document
-\setlength\parindent{15pt}
-\newcommand{\btmlgs}{\textit{Bitume Legends}}
+% Import d'images, couleurs
+\usepackage{graphicx,color}
+
+\newcommand{\hsp}{\hspace{20pt}}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\newcommand{\btmlgs}{\textsl{Bitume Legends}}
 \newcommand{\AI}{Intelligence Artificielle}
-%\pagestyle{fancy}
-%\fancyhf{}
-%\rhead{Bitume Legends}
-%\lhead{Cahier des Charge}
+\newcommand{\FL}{\textsl{FL Studio 20}}
+\newcommand{\CEX}{\textsc{CarrEniX}}
+\newcommand{\SITE}{\(\mathtt{btms.games}\)}
+\renewcommand{\listfigurename}{Table des Annexes}
+\renewcommand{\contentsname}{Table des Matières}
 
-% Begin of the document
-\begin{document}
 
-\title{Soutenance Finale \\ {\large Projet Bitume Legends}}
-\author{CarrEniX}
-\date{Juin 2022}
-\maketitle
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{Rapport de Soutenance Finale}
+\rhead{{\CEX}\\{\btmlgs}}   
 
-% \begin{center}
-%   \includegraphics[width=0.5\textwidth]{Medias/logo192.png}
-% \end{center}
+\begin{document}  
 
-\tableofcontents
-\clearpage
+    \input{homepage}
+
+    \newpage
+
+    \tableofcontents
+
+    \newpage
+
+    \addcontentsline{toc}{section}{Introduction}
+    \section*{Introduction}
+    \lipsum[1-2]
+
+
+    \section{Reprise du Cahier des Charges}
+    \lipsum[3-6]
+
+
+    \section{Chronologie temporelle du temps chronologique}
+    \lipsum[7-27]
+
+
+    \section{Quatrième partie}
+
+
+
+    \section{Cinquième partie}
+
+
+    \addcontentsline{toc}{section}{Conclusion}
+    \section*{Conclusion}
+
+
 \end{document}
