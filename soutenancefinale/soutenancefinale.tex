@@ -5,10 +5,8 @@
 % Juin 2022
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \documentclass[a4paper,12pt]{article}
 
-% Mise en page française
 \usepackage[utf8]{inputenc}
 \usepackage[french]{babel}
 \usepackage{geometry}
@@ -20,8 +18,6 @@
 \usepackage[aboveskip=.5cm]{caption}
 \usepackage{pdflscape}
 \usepackage{xcolor}
-
-% Import d'images, couleurs
 \usepackage{graphicx,color}
 
 \newcommand{\hsp}{\hspace{20pt}}
@@ -33,6 +29,9 @@
 \newcommand{\SITE}{\(\mathtt{btms.games}\)}
 \renewcommand{\listfigurename}{Table des Annexes}
 \renewcommand{\contentsname}{Table des Matières}
+\newcommand\ytl[2]{\parbox[b]{10em}{\hfill{\color{cyan}\bfseries\sffamily 
+    #1}~$\cdots\cdots$~}\makebox[0pt][c]{$\bullet$}\vrule\quad 
+    \parbox[c]{5cm}{\vspace{7pt}\color{red!40!black!80}\raggedright\sffamily #2\\[7pt]}\\[-3pt]}
 
 
 \usepackage{fancyhdr}
@@ -56,22 +55,240 @@
 
 
     \section{Reprise du Cahier des Charges}
-    \lipsum[3-6]
+    Le but ici c'est de réexpliquer le concept du jeu tel que présenté ds le cahier des charges. 
+    On explique notre vision, ce que nous avons tenu à mettre ds le jeu et on parle pas trop des
+    chose qu'on a dit mais pas fait.
+    \clearpage
+    \newpage
 
 
     \section{Chronologie temporelle du temps chronologique}
-    \lipsum[7-27]
+    \textbf\textsc{J'ai mis les points importants relatés ds les anciens rapports, le but va être de rédiger ça}
+        \subsection{Janvier -> Mars}
+            \subsubsection{Multijoueur}
+                La base du multijoueur a été implémentée, non sans peines. 
+                Nous pouvons nous connecter à 4 personnes (nous avons choisi ce nombre pour des questions 
+                de simplicité) et commencer une partie. Il y a une interface de connection, avec différentes 
+                options (détaillées plus tard dans ce document) puis le système de \textit{spawn} (apparition).
+                Une musique de jeu a également été crée pour le multijoueur.
+  
+            \subsubsection{Programme Beta (\(\beta\))}
+                Nous avons créé un questionnaire sur \textsl{Google Forms} afin que les premières personnes testant
+                le jeu puisse nous signaler les bugs qu'ils ont rencontrés et nous les décrire le plus 
+                précisément possible dans le but d'être corrigé rapidement. Pour cela, ce questionnaire 
+                possède pour trois catégories. Tout d'abord, une question sur le mode de jeu où le bug 
+                s'est produit. Puis une autre sur la nature du bug et enfin un paragraphe réservé
+                pour nous décrire avec le plus de détails possible ce bug. Toutefois, si l'utilisateur
+                trouve compliqué de décrire son bug, des liens pour nous contacter sur \textsl{Discord} 
+                ou \textsl{GitHub} sont indiqués.
+        
+            \subsubsection{Communication}
+                Au sujet de la communication, nous avons décidé de faire une publication sur \textsl{Instagram}
+                \footnote{\(\mathtt{instagram.com/bitumelegends}\)}
+                pour tenir informés nos potentiels premiers joueurs. Dans cette publication se trouve le lien 
+                du site Internet où l'utilisateur pourra consulter se familiariser avec le menu de notre
+                jeu, puisque le site reprend l'esthétique de ce dernier. Enfin l'onglet de la réalisation
+                et celui de la présentation donnent l'occasion de nous connaître plus, de même pour le projet.
+                Ils pourront enfin nous rejoindre sur \textsl{Discord} pour que nous puissions les inscrire dans le
+                programme de tests.
+        
+            \subsubsection{Site Internet}
+                Le site web a pour but de présenter les membres du groupe, leur rôle et leur avis sur le projet.
+                Il présente aussi l'historique avec les idées de conception du jeu, du nom du jeu et celui du studio
+                de développement. Ensuite, il nous permet d'expliquer comment nous avons réalisé le projet avec la
+                chronologie de réalisation, c'est-à-dire les différentes étapes de réalisation du projet mais aussi
+                les problèmes rencontrés et les solutions envisagées. Enfin, il contient aussi
+                un espace dédié pour télécharger le projet et le jeu. Ce site est notre vitrine, il nous permet de faire
+                la promotion de \btmlgs.
+        
+            \subsubsection{Menu}
+                Le menu doit permettre d'accéder aux différents modes de jeux et fonctionnalités du jeu.
+                Il doit servir de hub pour accéder au mode multijoueur, contre la montre et contre l'\AI.
+                Il doit également permettre d'accéder au garage contenant les voitures du joueur. Un affichage
+                du niveau du joueur, un bouton pour accéder à la remontée de bug et un menu d'options 
+                sont également dans le menu du jeu. Au début du projet, le menu était basique. Il servait 
+                simplement à pouvoir accéder aux différentes modes de jeux. Suite à cela, Melvyn et Victorien 
+                ont commencé à travailler sur un design plus poussé que celui de base de \textsl{Unity}, 
+                en adoptant notamment un thème de couleurs basé sur le logo du jeu. Tout d'abord, une
+                ébauche du design a été réalisée sur Canva, dans le but de partager des idées sur le look
+                final du menu. Ensuite nous avons implémenté le design dans le jeu, en insérant un fond
+                et des espaces pour les futures fonctionnalités, en implémentant les boutons et en changeant
+                leur design. Nous avons également implémenté le code couleur du design. Enfin, nous avons 
+                ajouté des effets sonores et de couleurs aux boutons lorsqu'ils sont cliques ou lorsque
+                la souris passe dessus. Une musique tourne également en fond dans le menu.
 
 
-    \section{Quatrième partie}
+        \subsection{Mars -> Avril}
+            Suite à la soutenance 1 du 10 mars, nous avons prit quelques jours de repos. Puis le 14, nous
+            avons mit en place nos objectifs pour la soutenance 2 vis-à-vis du cahier des charges, de
+            l'état du jeu ainsi que des commentaires de la première soutenance.\\
+            Nous avons travaillé en parallèle sur différents objectifs, certains plus longs que d'autres.
+            Notamment l'\AI, qui a prit énormément de temps et son travail d'implémentation ayant
+            commencé au début de cette période. Le 20 mars ce sont les mécaniques de conduite comme le
+            drift ainsi que le \textit{sound design} des véhicules qui ont été implémentés. Puis le 25 la
+            création de deux nouveaux circuits, \textsl{City} et \textsl{Port}. Le mois de mars s'est
+            conclu par la création des menus des modes de jeu \textsl{Timer} et \textsl{Solo}.\\
+            Après 3 semaines, la première version de l'\AI était prête le 10 avril, ainsi que le
+            comportement en fin et début de course le 15. Le 18, le garage et le choix de la voiture 
+            sélectionnée, ainsi que la sélection de la difficulté et du circuit ont été mis en place avec
+            succès. Le 20, l'IA a connu sa version 2.0 avec une précision améliorée et fonctionnelle sur
+            les deux circuits.\\
+            Durant la dernière semaine avant la soutenance, des implémentations mineures ou des
+            corrections de bugs ont eu lieu. Le 22 avril le menu principal a été terminé et avec
+            l'affichage de la voiture et le lien entre chaque sous-menus a été fait. Le 24 la musique a
+            été correctement implémentée et le 25 le mode de jeu \textsl{Timer} a été corrigé pour enfin
+            fonctionner correctement. Enfin, le 27 le site Web est enfin devenu \textit{responsive} et le
+            28 le mode \textsl{Solo} est devenu fonctionnel.
+
+            \subsubsection{Graphisme}
+                Au lancement du projet, nous voulions créer nous même nos voitures et nos circuit à 
+                l'aide du logiciel de modélisation 3D Blender. Toutefois, cela prends beaucoup de temps,
+                temps qui n'est pas utilisé à coder le jeu, résoudre des bugs, etc. Nous avons donc fait
+                un compromis entre notre volonté de créer nous même le design du jeu et la contrainte de
+                temps. Nous nous sommes orientés alors sur l'ajout d'un \textit{asset} du \textsl{Unity
+                Asset Store}, pour obtenir des voitures et des morceaux de pistes. Ceci nous a permis de
+                créer directement dans \textsl{Unity} nos différents circuits et de gagner beaucoup de 
+                temps. 
+            
+            \subsubsection{Sauvegarde}
+                Pour que notre jeu soit plus facile à appréhender, nous avons créé un système de 
+                sauvegarde. Il est composé de 2 principe : le \textsl{Save}, qui permet d'enregistrer 
+                les données voulues et nécessaires au bon fonctionnement du jeu, ainsi que le 
+                \textsl{Load}, qui permet de charger la sauvegarde lors du lancement du jeu. Pour le 
+                moment, il s'occupe uniquement de sauvegarder quelle voiture a été choisie dans le 
+                garage et de l'enregistrer pour la charger lors du prochain lancement du jeu. À terme, 
+                nous comptons sauvegarder l'expérience du joueur, son pseudo, ainsi que la possible 
+                customisation de ses voitures.
+
+            \subsubsection{Menu}
+                Pour la première soutenance, nous avons fait une charte graphique et un design pour les 
+                menus.
+                Nous nous étions concentrés sur le menu principal. Pour cette seconde soutenance, nous 
+                avons travaillé les
+                sous-menus des différents modes de jeu et les fonctionnalités internes.\\
+                Nous avons implémenté le garage, permettant de
+                sélectionner une voiture pour la course parmi la liste de voitures disponibles, qui
+                est ensuite sauvegardée. La voiture sélectionnée s'affiche ensuite dans le menu principal
+                à la place du logo du jeu. Les menus des modes de
+                jeux \textsl{Timer} (course contre la montre) et \textsl{Solo} (contre une \AI) ont
+                été implémentés de la même manière. Ils ont donc une structure similaire. Au sein de
+                ces menus, nous retrouvons la sélection des circuits ainsi que la difficulté de la course et
+                un moyen de revenir au menu précédent.\\
+                Nous comptons ajouter un menu de réglages permettant de régler le volume du jeu, le volume
+                des musiques, les touches permettant d'avancer ainsi que de changer de pseudo. Une 
+                version simplifiée de ce menu, contenant la modification des touches de directions et le
+                volume du jeu sera également disponible en course.
+
+            \subsubsection{\AI}
+                L'implémentation de l'\AI\, s'est bien déroulée. Nous avons pris du temps
+                à nous décider sur quelle solution nous allons utiliser et sur comment
+                l'\AI\, devrait se comporter une fois implémentée dans le jeu. Nous sommes partis sur une
+                solution hybride entre celle intégrée dans \textsl{Unity} et une \textit{homemade}.
+                Nous nous sommes basé sur le \textit{NavMesh} de \textsl{Unity}, puis nous avons
+                travaillé à animer la voiture et à définir les points qu'elle devait franchir pour
+                terminer le circuit. Ensuite est arrivée
+                la (longue) partie de la calibration. Au début, notre IA se déplaçait aléatoirement,
+                si bien qu'elle inventait le chemin à chaque fois sans prendre le circuit que nous
+                avions dessiné. Après plusieurs jours de recherche, nous avons réussi à lui faire
+                prendre uniquement le chemin prévu. Ensuite, il a fallu régler sa vitesse et sa
+                précision, pour éviter qu'elle ne rentre dans chaque mur par souci de freinage en virage.\\
+                Après ces quelques soucis, nous avons obtenu un mode \textsl{Solo} pratiquement
+                fonctionnel. Nous avons rajouté à ceci les scripts qui nous permettent de gérer
+                le départ et la fin de la course et nous étions bons.
+
+            \subsubsection{Gameplay}
+                En début de course, un décompte avant le départ est donné, bloquant la voiture pour
+                empêcher les faux départs. Tout au long du circuit, le joueur doit traverser une série de 
+                balises, les \textit{checkpoints}, pour valider la course. Cela permet d'empêcher le 
+                joueur de simplement faire demi-tour et de traverser la ligne d'arrivée pour gagner, ou
+                de couper le circuit. Ici le joueur est forcé de passer par chaque \textit{checkpoints},
+                dans le bon sens afin de pouvoir terminer la course.\\
+                Chaque mode de jeu (hors multijoueur) comprend une sélection de difficulté.
+                La difficulté pour le mode de jeu \textsl{Timer} est déterminée par le temps maximum pour 
+                terminer la course. En revanche, pour le mode de jeu \textsl{Solo}, 
+                elle réside dans la vitesse et la précision de l'\AI, ce qui permet d'affronter des 
+                \textit{bots} plus ou moins forts. \\
+                En mode \textsl{Solo}, la course est gagnée si l'on est arrivé en premier ou que l'on a 
+                survécu au \textit{bot} qui peut nous infliger des dégâts. En mode \textsl{Timer}, elle 
+                est gagnée lorsque l'on passe la ligne d'arrivée (et toutes les balises précédentes) avant
+                la fin du temps imparti. En cas de défaite, pour chacun de ces deux modes de jeu la partie
+                est terminée et l'on peut soit recommencer la course, soit revenir au menu pour changer de
+                véhicule, de circuit ou de difficulté.\\
+                Nous avons également mis en place un système de collision qui, en plus d'impacter la forme de 
+                la voiture, peut aussi impacter son comportement (un mauvais choc sur une des roues avant ou 
+                le coté de la voiture peut provoquer des soucis de direction).
+
+            \subsubsection{Musiques}
+                Notre jeu comporte des musiques originales composées sur \FL\, par Melvyn. Un objectif d'un 
+                peu moins de 5 musiques différentes a été posé dans le cahier des charges. Suite aux 
+                commentaires de la première soutenance où il nous a été demandé de plus se concentrer sur le
+                jeu, seules une musique de menu et une musique de course ont été composées. Toutefois, nous 
+                tenions à ce qu'il y ai des nouveautés sur l'aspect de l'ambiance du jeu. Alors un travail 
+                sur l'implémentation de ces musiques a été faite, notamment lors du passage d'une scène à
+                une autre sans que la musique ne cesse ou recommence depuis le début. Pour la troisième 
+                soutenance, l'objectif des musiques sera rempli avec un système de sélection des musiques 
+                avec la possibilité de modifier le volume de la musique dans un sous-menus de réglages comme
+                dit ci-dessus dans la section menu.
+            
+            \subsubsection{Site Web}
+                Pour ce qui est du site Web, la mise en page de ce dernier était déjà bien avancée. 
+                Cependant, quelques ajouts ont été fait, notamment pour permettre la finalisation de la 
+                page ressources, qui contient tous les outils que nous avons utilisé pour réaliser notre 
+                jeu. De plus, la page réalisation a été terminée avec l'ajout de la partie 
+                problèmes et solutions.
+                Enfin, pour ce qui est de la partie la plus difficile du site Web, le \textit{responsive 
+                design}, (qui est de rendre le site Web adaptable à toutes tailles d'écran), l'utilisation 
+                du code HTML était indispensable. Nous avons donc cherché à comprendre comment le 
+                \textit{responsive} fonctionnait à l'aide de tutoriels et implémenté chaque élément 
+                pour les rendre indépendants entre eux et ainsi obtenir notre site Web \textit{responsive}.
 
 
+    \section{Partie Technique}
+    \lipsum[28-32]
 
-    \section{Cinquième partie}
+
+    \section{Ressentis personnels}
+    \lipsum[33-36]
 
 
     \addcontentsline{toc}{section}{Conclusion}
     \section*{Conclusion}
+    \lipsum[36-37]
+
+
+    \clearpage
+    \addcontentsline{toc}{section}{Annexes}
+    \section*{Annexes}
+        \listoftables
+        \listoffigures
+
+        \begin{table}
+            \caption{Chronologie du Projet}
+            \centering
+            \begin{minipage}[t]{.7\linewidth}
+                \color{gray}
+                \rule{\linewidth}{1pt}
+                \ytl{Before}{To Complete}
+                \ytl{10 mars}{Soutenance 1}
+                \ytl{14 mars}{Mise en place des objectifs pour la soutenance 2}
+                \ytl{20 mars}{Implémentation du drift et du sound design}
+                \ytl{25 mars}{Création de deux nouveaux circuits}
+                \ytl{30 mars}{Implémentation des menus \textsl{Timer} et \textsl{Solo}}
+                \ytl{10 avril}{\AI\, version 1.0}
+                \ytl{15 avril}{Implémentation du début et de la fin des courses}
+                \ytl{17 avril}{Implémentation du garage}
+                \ytl{18 avril}{Implémentation de la sauvegarde}
+                \ytl{20 avril}{\AI\, version 2.0}
+                \ytl{22 avril}{Finition du menu principal}
+                \ytl{24 avril}{Implémentation de la musique}
+                \ytl{25 avril}{Mode Timer fonctionnel}
+                \ytl{27 avril}{Site Web responsive}
+                \ytl{28 avril}{Mode Solo fonctionnel}
+                \ytl{29 avril}{Soutenance 2}
+                \ytl{After}{To Complete}
+                \rule{\linewidth}{1pt}
+            \end{minipage}
+        \end{table}
 
 
 \end{document}
