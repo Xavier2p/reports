@@ -1,0 +1,218 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Manuel d'Installation
+% Bitume Legends Project
+% CarrEniX
+% Juin 2022
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{geometry}
+\usepackage{lipsum}
+\usepackage{mathtools}
+\usepackage[T1]{fontenc}
+\usepackage{url}
+\usepackage{longtable}
+\usepackage[aboveskip=.5cm]{caption}
+\usepackage{pdflscape}
+\usepackage{xcolor}
+\usepackage{graphicx,color}
+\graphicspath{{../Medias}}
+
+\newcommand{\hsp}{\hspace{20pt}}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\newcommand{\btmlgs}{\textsl{Bitume Legends}}
+\newcommand{\AI}{Intelligence Artificielle}
+\newcommand{\FL}{\textsl{FL Studio 20}}
+\newcommand{\CEX}{\textsc{CarrEniX}}
+\newcommand{\SITE}{\(\mathtt{btms.games}\)}
+\newcommand{\report}{Manuel d'Installation}
+\renewcommand{\listfigurename}{Table des Annexes}
+\renewcommand{\contentsname}{Table des Matières}
+\newcommand\ytl[2]{\parbox[b]{10em}{\hfill{\color{cyan}\bfseries\sffamily 
+    #1}~$\cdots\cdots$~}\makebox[0pt][c]{$\bullet$}\vrule\quad 
+    \parbox[c]{5cm}{\vspace{7pt}\color{red!40!black!80}\raggedright\sffamily #2\\[7pt]}\\[-3pt]}
+
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{\report}
+\rhead{{\CEX}\\{\btmlgs}}   
+
+\begin{document}  
+
+    % Homepage
+    \begin{titlepage}
+        \begin{center}
+            \includegraphics[scale=0.7]{logo192.png}\\[0.5cm]
+            \textsc{\Large \report}\\[1.5cm]
+
+            \HRule \\[0.4cm]
+            { \LARGE \bfseries \btmlgs \\[0.4cm] }
+
+            \HRule \\[2cm]
+        
+            \textsc{by \Large \CEX}\\[1.5cm]
+        \end{center}
+        \tableofcontents
+        \begin{center}
+            \HRule\\
+            Lien pour télécharger le jeu: \url{https://btms.games/telechargement.html}
+        \end{center}
+    \end{titlepage}
+
+    \section*{Introduction}
+        Ce document est un manuel d'installation de \btmlgs.
+        Pour installer \btmlgs, se référer à la partie concernant votre système d'exploitation.
+        En cas de problèmes avec l'installation, 
+
+    \section{Installation sur Windows}
+        \begin{enumerate}
+            \item
+                \textbf{Télécharger} le fichier \texttt{btms$\_$windows.exe}
+                depuis le site \\\url{https://btms.games/telechargement.html} en
+                cliquant sur \\\fbox{\texttt{Téléchargement Windows 10+}}.\\
+                \begin{center}
+                    \includegraphics[scale=0.2]{dl_page_win.png}
+                \end{center}
+                
+            \item
+                \textbf{Lancer} le fichier \texttt{btms$\_$windows.exe}.
+                \\IMAGE
+            \item 
+                \textbf{Choisir} la langue de l'installateur puis cliquer sur
+                \fbox{\texttt{Suivant}}.
+                \\IMAGE
+            \item 
+                \textbf{Choisir} le lieu d'installation, nous conseillons
+                \texttt{C:$\backslash${Program} Files$\backslash${Bitume Legends}}
+                puis cliquer sur \fbox{\texttt{Suivant}}.
+                \\IMAGE
+            \item 
+                \textbf{Cliquer} sur \texttt{Ajouter une icône sur le bureau}
+                pour retrouver facilement \btmlgs puis cliquer sur \fbox{\texttt{Suivant}}.
+                \\IMAGE
+            \item 
+                \textbf{Attendre} que le programme s'installe et cliquer sur
+                \fbox{\texttt{Terminer}}.
+                \\IMAGE
+            \item 
+                \textbf{Revenir} sur le bureau.
+                \\IMAGE
+            \item
+                \textbf{Cliquer} sur \fbox{\btmlgs} pour ouvrir le jeu.
+                \\IMAGE
+        \end{enumerate}
+        \clearpage
+
+    \section{Installation sur macOS}
+        \begin{enumerate}
+            \item
+                \textbf{Télécharger} le fichier \texttt{btms$\_$macos.dmg.zip}
+                depuis le site \\\url{https://btms.games/telechargement.html} en
+                cliquant sur \\\fbox{\texttt{Téléchargement macOS 12 Monterey}}.\\
+                \begin{center}
+                    \includegraphics[scale=0.2]{dl_page_mac.png}
+                \end{center}
+            \item
+                \textbf{Décompresser} le fichier \texttt{btms$\_$macos.dmg.zip}
+                \footnote{Parfois, l'installateur est déjà décompressé. Si c'est
+                le cas, merci de passer au point suivant.}.\\
+                \begin{center}
+                    \includegraphics[scale=0.4]{dmg_in_dl.png}
+                \end{center}
+            \item
+                \textbf{Lancer} le fichier \texttt{btms$\_$macos.dmg}.
+            
+            \clearpage
+            \item
+                \textbf{Ouvrir} \fbox{\textsl{Bitume Legends}} depuis le bureau.
+            \item
+                \textbf{Déposer} l'application \fbox{\btmlgs} dans le dossier
+                \texttt{Applications}.\\
+                \begin{center}
+                    \includegraphics[scale=0.5]{in_btms-dmg.png}
+                \end{center}
+            \item
+                \textbf{Fermer} l'installateur et l'éjecter.
+            \item 
+                \textbf{Ouvrir} le \textsl{Launchpad} (Afficher les applications).
+            \item
+                \textbf{Lancer} l'application \fbox{\btmlgs}.
+        \end{enumerate}
+
+        \clearpage
+
+    \section{Problèmes d'installation avec Windows}
+        En temps qu'étudiants, et n'ayant pas une licence professionnelle, nous ne pouvons 
+        pas faire vérifier notre jeu par \textsl{Microsoft}.
+        Cela implique que l'application peut poser problème à l'installation.
+        Pour cela, nous avons prévu une solution pour forcer l'installation.
+        Si la fenêtre suivante apparaît, merci de suivre la procédure ci-dessous.
+        \\IMAGE
+        \begin{itemize}
+            \item 
+                \textbf{Cliquer} sur \fbox{\texttt{Informations Complémentaires}}.
+                \\IMAGE
+            \item
+            \textbf{Cliquer} sur \fbox{\texttt{Exécuter quand même}}.
+                \\IMAGE
+            \item
+            \textbf{Revenir} à l'étape numéro \{\}.
+                \\IMAGE
+        \end{itemize}
+
+
+    \clearpage
+    \section{Problèmes d'installation avec macOS}
+        En temps qu'étudiants, et n'ayant pas une licence professionnelle, nous ne pouvons 
+        pas faire vérifier notre jeu par \textsl{Apple}.
+        Cela implique que l'application peut poser problème à l'installation.
+        Pour cela, nous avons prévu une solution pour forcer l'installation.
+        Si la fenêtre suivante apparaît, merci de suivre la procédure ci-dessous.
+
+        \begin{center}
+            \includegraphics[scale=0.4]{install_mac_error.png}
+        \end{center}
+    
+        \begin{itemize}
+            \item 
+                \textbf{Cliquer} sur \fbox{\texttt{OK}} pour fermer la pop-up.
+            \item
+                \textbf{Ouvrir} l'application \textsl{Préférences Système}.
+            \item
+                \textbf{Cliquer} sur l'icône \fbox{\texttt{Sécurité et Confidentialité}}.
+                \begin{center}
+                    \includegraphics[scale=0.35]{install_macos_sp.png}
+                \end{center}
+                \clearpage
+            \item
+                \textbf{Cliquer} sur \fbox{\texttt{Ouvrir quand même}}\; dans l'onglet
+                \fbox{\texttt{Général}}.
+                \begin{center}
+                    \includegraphics[scale=0.35]{install_macos_security.png}
+                \end{center}
+            \item
+                \textbf{Valider} l'ouverture du jeu sur la pop-up.\\
+                \begin{center}
+                    \includegraphics[scale=0.6]{ok_mac.png}
+                \end{center}
+        \end{itemize}
+
+    \clearpage
+    \section{Procédure de Désinstallation}
+        \subsection*{Windows}
+            \begin{itemize}
+                \item
+                    \textbf{Aller} à l'endroit où le jeu est installé.
+                \item
+                    \textbf{Cliquer} sur \fbox{\texttt{uninstall.exe}}.
+                \item
+                    \textbf{Suivre} les étapes indiquées.
+            \end{itemize}
+        \subsection*{macOS}
+            Pour désinstaller \btmlgs\;sur \textsl{macOS}, veuillez suivre la procédure habituelle.
+
+\end{document}
