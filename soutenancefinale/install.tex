@@ -18,6 +18,7 @@
 \usepackage[aboveskip=.5cm]{caption}
 \usepackage{pdflscape}
 \usepackage{xcolor}
+\usepackage{fancyhdr}
 \usepackage{graphicx,color}
 \graphicspath{{../Medias}}
 
@@ -35,14 +36,11 @@
     #1}~$\cdots\cdots$~}\makebox[0pt][c]{$\bullet$}\vrule\quad 
     \parbox[c]{5cm}{\vspace{7pt}\color{red!40!black!80}\raggedright\sffamily #2\\[7pt]}\\[-3pt]}
 
-
-\usepackage{fancyhdr}
 \pagestyle{fancy}
 \lhead{\report}
 \rhead{{\CEX}\\{\btmlgs}}   
 
-\begin{document}  
-
+\begin{document}
     % Homepage
     \begin{titlepage}
         \begin{center}
@@ -63,10 +61,6 @@
         \end{center}
     \end{titlepage}
 
-<<<<<<< HEAD
-=======
-    \addcontentsline{toc}{section}{Introduction}
->>>>>>> 0737757309992d623e78eb6953edcad6021eead0
     \section*{Introduction}
         Ce document est un manuel d'installation de \btmlgs.
         Pour installer \btmlgs, se référer à la partie concernant votre système d'exploitation.
@@ -76,48 +70,61 @@
         \begin{enumerate}
             \item
                 \textbf{Télécharger} le fichier \texttt{btms$\_$windows.exe}
-<<<<<<< HEAD
                 depuis le site \\\url{https://btms.games/telechargement.html} en
                 cliquant sur \\\fbox{\texttt{Téléchargement Windows 10+}}.\\
-                \begin{center}
-                    \includegraphics[scale=0.2]{dl_page_win.png}
-                \end{center}
-                
-=======
-                depuis le site \url{https://btms.games/telechargement.html} en
-                cliquant sur \fbox{\texttt{Téléchargement Windows 10+}}.
-                \\IMAGE
->>>>>>> 0737757309992d623e78eb6953edcad6021eead0
+                \begin{figure}[h]
+                    \includegraphics[scale=0.22]{dl_page_win.png}
+                    \caption{Page de téléchargement}
+                \end{figure}
             \item
                 \textbf{Lancer} le fichier \texttt{btms$\_$windows.exe}.
-                \\IMAGE
+            \clearpage
             \item 
                 \textbf{Choisir} la langue de l'installateur puis cliquer sur
                 \fbox{\texttt{Suivant}}.
-                \\IMAGE
+                \begin{figure}[h]
+                    \centering
+                    \includegraphics[scale=0.7]{langues.png}
+                    \caption{Installateur - Langue}
+                \end{figure}
             \item 
                 \textbf{Choisir} le lieu d'installation, nous conseillons
-                \texttt{C:$\backslash${Program} Files$\backslash${Bitume Legends}}
+                \\\texttt{C:$\backslash${Program} Files (x86)$\backslash${Bitume Legends}}
                 puis cliquer sur \fbox{\texttt{Suivant}}.
-                \\IMAGE
+                \begin{figure}[h]
+                    \centering
+                    \includegraphics[scale=0.5]{install_location.png}
+                    \caption{Installateur - Emplacement}
+                \end{figure}
+            \clearpage
             \item 
                 \textbf{Cliquer} sur \texttt{Ajouter une icône sur le bureau}
-<<<<<<< HEAD
                 pour retrouver facilement \btmlgs puis cliquer sur \fbox{\texttt{Suivant}}.
-=======
-                pour retrouver facilement \btmlgs ppuis cliquer sur \fbox{\texttt{Suivant}}.
->>>>>>> 0737757309992d623e78eb6953edcad6021eead0
-                \\IMAGE
+                \begin{figure}[h]
+                    \centering
+                    \includegraphics[scale=0.4]{shortcut.png}
+                    \caption{Installateur - Icône}
+                \end{figure}
+            \item
+                \textbf{Vérifier} l'installation et cliquer sur \fbox{\texttt{Installer}}.
+                \begin{figure}[h]
+                    \centering
+                    \includegraphics[scale=0.4]{recap.png}
+                    \caption{Installateur - Récapitulatif}
+                \end{figure}
+            \clearpage
             \item 
                 \textbf{Attendre} que le programme s'installe et cliquer sur
                 \fbox{\texttt{Terminer}}.
-                \\IMAGE
+                \begin{figure}[h]
+                    \centering
+                    \includegraphics[scale=0.5]{end_process.png}
+                    \caption{Installateur - Fin}
+                \end{figure}
             \item 
                 \textbf{Revenir} sur le bureau.
-                \\IMAGE
             \item
                 \textbf{Cliquer} sur \fbox{\btmlgs} pour ouvrir le jeu.
-                \\IMAGE
         \end{enumerate}
         \clearpage
 
@@ -125,65 +132,42 @@
         \begin{enumerate}
             \item
                 \textbf{Télécharger} le fichier \texttt{btms$\_$macos.dmg.zip}
-<<<<<<< HEAD
                 depuis le site \\\url{https://btms.games/telechargement.html} en
                 cliquant sur \\\fbox{\texttt{Téléchargement macOS 12 Monterey}}.\\
-                \begin{center}
-                    \includegraphics[scale=0.2]{dl_page_mac.png}
-                \end{center}
+                \begin{figure}[h]
+                    \includegraphics[scale=0.22]{dl_page_mac.png}
+                    \caption{Page de téléchargement}
+                \end{figure}
+            
+            \clearpage
             \item
                 \textbf{Décompresser} le fichier \texttt{btms$\_$macos.dmg.zip}
                 \footnote{Parfois, l'installateur est déjà décompressé. Si c'est
                 le cas, merci de passer au point suivant.}.\\
-                \begin{center}
-                    \includegraphics[scale=0.4]{dmg_in_dl.png}
-                \end{center}
+                \begin{figure}[h]
+                    \includegraphics[scale=0.5]{dmg_in_dl.png}
+                    \caption{Dossier Téléchargement}
+                \end{figure}
             \item
                 \textbf{Lancer} le fichier \texttt{btms$\_$macos.dmg}.
+            \item
+                \textbf{Ouvrir} \fbox{\textsl{Bitume Legends}} depuis le bureau.
             
             \clearpage
             \item
-                \textbf{Ouvrir} \fbox{\textsl{Bitume Legends}} depuis le bureau.
-            \item
                 \textbf{Déposer} l'application \fbox{\btmlgs} dans le dossier
                 \texttt{Applications}.\\
-                \begin{center}
-                    \includegraphics[scale=0.5]{in_btms-dmg.png}
-                \end{center}
+                \begin{figure}[h]
+                    \includegraphics[scale=0.55]{in_btms-dmg.png}
+                    \caption{btms$\_$macos.dmg}
+                \end{figure}
             \item
                 \textbf{Fermer} l'installateur et l'éjecter.
-            \item 
+            \item
                 \textbf{Ouvrir} le \textsl{Launchpad} (Afficher les applications).
             \item
                 \textbf{Lancer} l'application \fbox{\btmlgs}.
-=======
-                depuis le site \url{https://btms.games/telechargement.html} en
-                cliquant sur \fbox{\texttt{Téléchargement macOS 12 Monterey}}.
-                \\IMAGE
-            \item
-                \textbf{Décompresser} le fichier \texttt{btms$\_$macos.dmg.zip}
-                \footnote{Parfois, l'installateur est déjà décompressé. Si c'est
-                le cas, merci de passer au point suivant.}.
-                \\IMAGE
-            \item
-                \textbf{Lancer} le fichier \texttt{btms$\_$macos.dmg}.
-                \\IMAGE
-            \item
-                \textbf{Déposer} l'application \fbox{\btmlgs} dans le dossier
-                \texttt{Applications}.
-                \\IMAGE
-            \item
-                \textbf{Fermer} l'installateur et l'éjecter.
-                \\IMAGE
-            \item 
-                \textbf{Ouvrir} le \textsl{Launchpad} (Afficher les applications).
-                \\IMAGE
-            \item
-                \textbf{Lancer} l'application \fbox{\btmlgs}.
-                \\IMAGE
->>>>>>> 0737757309992d623e78eb6953edcad6021eead0
         \end{enumerate}
-
         \clearpage
 
     \section{Problèmes d'installation avec Windows}
@@ -191,63 +175,76 @@
         pas faire vérifier notre jeu par \textsl{Microsoft}.
         Cela implique que l'application peut poser problème à l'installation.
         Pour cela, nous avons prévu une solution pour forcer l'installation.
-<<<<<<< HEAD
         Si la fenêtre suivante apparaît, merci de suivre la procédure ci-dessous.
-=======
-        Si la fenêtre suivante apparait, merci de suivre la procédure ci-dessous.
->>>>>>> 0737757309992d623e78eb6953edcad6021eead0
-        \\IMAGE
+        \begin{figure}[h]
+            \centering
+            \includegraphics[scale=0.7]{error_win.png}
+            \caption{Erreur d'installation}
+        \end{figure}
         \begin{itemize}
-            \item 
+            \item
                 \textbf{Cliquer} sur \fbox{\texttt{Informations Complémentaires}}.
-                \\IMAGE
+            \clearpage
             \item
-            \textbf{Cliquer} sur \fbox{\texttt{Exécuter quand même}}.
-                \\IMAGE
+                \textbf{Cliquer} sur \fbox{\texttt{Exécuter quand même}}.
+                \begin{figure}[h]
+                    \centering
+                    \includegraphics[scale=0.7]{exec_qdmm.png}
+                    \caption{Exécuter quand même}
+                \end{figure}
             \item
-            \textbf{Revenir} à l'étape numéro \{\}.
-                \\IMAGE
+                \textbf{S'identifier} si besoin.
+            \item
+                \textbf{Revenir} à l'étape numéro 3.
         \end{itemize}
 
 
-<<<<<<< HEAD
     \clearpage
-=======
->>>>>>> 0737757309992d623e78eb6953edcad6021eead0
     \section{Problèmes d'installation avec macOS}
         En temps qu'étudiants, et n'ayant pas une licence professionnelle, nous ne pouvons 
         pas faire vérifier notre jeu par \textsl{Apple}.
         Cela implique que l'application peut poser problème à l'installation.
         Pour cela, nous avons prévu une solution pour forcer l'installation.
-<<<<<<< HEAD
         Si la fenêtre suivante apparaît, merci de suivre la procédure ci-dessous.
-
-        \begin{center}
-            \includegraphics[scale=0.4]{install_mac_error.png}
-        \end{center}
+        \begin{figure}[h]
+            \centering
+            \includegraphics[scale=0.8]{install_mac_error.png}
+            \caption{Erreur d'installation}
+        \end{figure}
     
         \begin{itemize}
-            \item 
+            \item
                 \textbf{Cliquer} sur \fbox{\texttt{OK}} pour fermer la pop-up.
             \item
                 \textbf{Ouvrir} l'application \textsl{Préférences Système}.
+            
+            \clearpage
             \item
                 \textbf{Cliquer} sur l'icône \fbox{\texttt{Sécurité et Confidentialité}}.
-                \begin{center}
-                    \includegraphics[scale=0.35]{install_macos_sp.png}
-                \end{center}
-                \clearpage
+                \begin{figure}[h]
+                    \centering
+                    \includegraphics[scale=0.5]{install_macos_sp.png}
+                    \caption{Préférences Système}
+                \end{figure}
+
+            \clearpage
             \item
                 \textbf{Cliquer} sur \fbox{\texttt{Ouvrir quand même}}\; dans l'onglet
                 \fbox{\texttt{Général}}.
-                \begin{center}
-                    \includegraphics[scale=0.35]{install_macos_security.png}
-                \end{center}
+                \begin{figure}[h]
+                    \centering
+                    \includegraphics[scale=0.5]{install_macos_security.png}
+                    \caption{Sécurité et Confidentialité}
+                \end{figure}
+
+            \clearpage
             \item
                 \textbf{Valider} l'ouverture du jeu sur la pop-up.\\
-                \begin{center}
-                    \includegraphics[scale=0.6]{ok_mac.png}
-                \end{center}
+                \begin{figure}[h]
+                    \centering
+                    \includegraphics[scale=1]{ok_mac.png}
+                    \caption{Autorisation}
+                \end{figure}
         \end{itemize}
 
     \clearpage
@@ -264,27 +261,4 @@
         \subsection*{macOS}
             Pour désinstaller \btmlgs\;sur \textsl{macOS}, veuillez suivre la procédure habituelle.
 
-=======
-        Si la fenêtre suivante apparait, merci de suivre la procédure ci-dessous.
-        \\IMAGE
-
-        \begin{itemize}
-            \item 
-                \textbf{Cliquer} sur \fbox{\texttt{OK}} pour fermer la pop-up.
-                \\IMAGE
-            \item
-                \textbf{Ouvrir} l'application \textsl{Préférences Système}.
-                \\IMAGE
-            \item
-                \textbf{Cliquer} sur l'icône \fbox{\texttt{Sécurité et Confidentialité}}.
-                \\IMAGE
-             \item
-                 \textbf{Cliquer} sur \fbox{\texttt{Ouvrir quand même}}
-                \\IMAGE
-             \item
-                 \textbf{Valider} l'ouverture sur la pop-up.
-                 \\IMAGE
-        \end{itemize}
-
->>>>>>> 0737757309992d623e78eb6953edcad6021eead0
 \end{document}

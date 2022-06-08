@@ -18,6 +18,7 @@
 \usepackage[aboveskip=.5cm]{caption}
 \usepackage{pdflscape}
 \usepackage{xcolor}
+\usepackage{fancyhdr}
 \usepackage{graphicx,color}
 \graphicspath{{../Medias}}
 
@@ -39,7 +40,6 @@
 \newcommand\room{\textsl{room}}
 
 
-\usepackage{fancyhdr}
 \pagestyle{fancy}
 \lhead{\report}
 \rhead{{\CEX}\\{\btmlgs}}   
@@ -118,7 +118,11 @@
 
     \section{Se repérer dans...}
         \subsection{...le menu principal}
-            \textsc{\bfseries INSERT IMAGE}
+            \begin{figure}[!h]
+                \centering
+                \includegraphics[scale=0.2]{utils_menu_principal.png}
+                \caption{Menu principal}
+            \end{figure}
             \begin{enumerate}
                 \item \button{Quit}: Permet de quitter le jeu.
                 \item \button{Player}: Permet voir les statistiques du joueur.
@@ -129,9 +133,10 @@
                 \item \button{Solo vs A.I.}: pour jouer contre une IA.
                 \item \button{Multiplayer}: Pour jouer avec ses amis.
                 \item \button{Garage}: Permet de choisir sa voiture avant la course.
-                \item \button{The car}: La voiture qui est choisie.
+                \item \button{The car}: La voiture qui est choisie pour jouer.
             \end{enumerate}
 
+        \clearpage
         \subsection{...le menu \textsl{Timer} / \textsl{Solo vs A.I.}}
             \textsc{\bfseries INSERT IMAGE}
             \begin{enumerate}
@@ -142,14 +147,9 @@
             \end{enumerate}
 
         \subsection{...le menu \textsl{Multiplayer}}
-<<<<<<< HEAD
             \textsc{\bfseries INSERT IMAGE}\\
             Dans ce document, le mot \room\;est utilisé pour désigner une instance
             de jeu en multijoueur, c'est à dire une partie de jeu.
-=======
-            \textsc{\bfseries INSERT IMAGE}
-            Ici, le mot \room\; signifie \textbf{TODODDOOOOOOOOO}
->>>>>>> 0737757309992d623e78eb6953edcad6021eead0
             \begin{enumerate}
                 \item \button{Back}: Permet de revenir au menu principal.
                 \item \button{Name}: Rentrer ici le pseudo du joueur pour la course.
