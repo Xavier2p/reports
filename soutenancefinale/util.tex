@@ -79,18 +79,12 @@
             \begin{center}
                 \begin{tabular}[c]{|| c | c | c ||}
                     \hline\hline
-                    Commande & AZERTY & QWERTY\\
-                    \hline\hline
-                    Avancer & Z & W\\
-                    \hline
-                    Reculer & S & S\\
-                    \hline
-                    Tourner à droite & Q & A\\
-                    \hline
-                    Tourner à gauche & D & D\\
-                    \hline
-                    Klaxon & H & H\\
-                    \hline\hline
+                    Commande & AZERTY & QWERTY\\\hline\hline
+                    Avancer & Z & W\\\hline
+                    Reculer & S & S\\\hline
+                    Tourner à droite & Q & A\\\hline
+                    Tourner à gauche & D & D\\\hline
+                    Klaxon & H & H\\\hline\hline
                 \end{tabular}
             \end{center}
 
@@ -138,7 +132,11 @@
 
         \clearpage
         \subsection{...le menu \textsl{Timer} / \textsl{Solo vs A.I.}}
-            \textsc{\bfseries INSERT IMAGE}
+            \begin{figure}[h]
+                \centering
+                \includegraphics[scale=0.2]{timermode.png}
+                \caption{Menu du \textsl{Timer} / \textsl{Solo vs A.I.}}
+            \end{figure}
             \begin{enumerate}
                 \item \button{Back}: Permet de revenir au menu principal.
                 \item \button{Track}: Permet de choisir un circuit pour la course.
@@ -146,20 +144,30 @@
                 \item \button{Start Game}: Lance la course.
             \end{enumerate}
 
+        \clearpage
         \subsection{...le menu \textsl{Multiplayer}}
-            \textsc{\bfseries INSERT IMAGE}\\
+            \begin{figure}[h]
+                \centering
+                \includegraphics[scale=0.2]{multi_menu.png}
+                \caption{Menu \textsl{Multiplayer}}
+            \end{figure}
             Dans ce document, le mot \room\;est utilisé pour désigner une instance
             de jeu en multijoueur, c'est à dire une partie de jeu.
             \begin{enumerate}
                 \item \button{Back}: Permet de revenir au menu principal.
                 \item \button{Name}: Rentrer ici le pseudo du joueur pour la course.
-                \item \button{Find}: Permet de trouver une \room\; ouverte.
                 \item \button{Join}: Permet de se connecter à une \room\; si on connaît le nom de celle-ci.
+                \item \button{Find}: Permet de trouver une \room\; ouverte.
                 \item \button{Create}: Permet de créer une \room.
             \end{enumerate}
             
+        \clearpage
         \subsection{...le \textsl{Garage}} 
-            \textsc{\bfseries INSERT IMAGE}
+            \begin{figure}[h]
+                \centering
+                \includegraphics[scale=0.2]{garage.png}
+                \caption{Garage}
+            \end{figure}
             \begin{enumerate}
                 \item \button{Back}: Permet de revenir au menu principal en validant la voiture affichée.
                 \item \fbox{$\triangleleft$} / \fbox{$\triangleright$}: Permet de choisir une voiture pour la course.
@@ -169,26 +177,41 @@
                 \item \button{Lock}: indique que le joueur n'a pas assez d'expérience pour débloquer la voiture.
             \end{enumerate}
 
+        \clearpage
         \subsection{...le menu \textsl{Options}}
-            \textsc{\bfseries INSERT IMAGE}
+            \begin{figure}[h]
+                \centering
+                \includegraphics[scale=0.2]{option_menu.png}
+                \caption{Menu \textsl{Options}}
+            \end{figure}
             \begin{enumerate}
-                \item \button{Back}: Permet de revenir au menu principal.
                 \item \button{Resolution}: Permet de choisir une résolution parmi celles proposées.
                 \item \button{Graphics}: Permet de sélectionner une qualité de graphismes.
                 \item \button{Sound}: Permet de régler le volume des sons du jeu.
                 \item \button{Music}: Permet de régler le volume de la musique.
+                \item \button{Back}: Permet de revenir au menu principal.
             \end{enumerate}
 
+        \clearpage
         \subsection{...le menu \textsl{Player}}
-            \textsc{\bfseries INSERT IMAGE}
+            \begin{figure}[h]
+                \centering
+                \includegraphics[scale=0.2]{player_menu.png}
+                \caption{Menu \textsl{Player}}
+            \end{figure}
             \begin{enumerate}
-                \item \button{Back}: Permet de revenir au menu principal.
                 \item \button{Stats}: Indique l'expérience du joueur ainsi que son niveau.
                 \item \button{Reset}: Permet de remettre le jeu à 0 pour recommencer la progression.
+                \item \button{Back}: Permet de revenir au menu principal.
             \end{enumerate}
 
+        \clearpage
         \subsection{...le menu \textsl{Pause}}
-            \textsc{\bfseries INSERT IMAGE}
+            \begin{figure}[h]
+                \centering
+                \includegraphics[scale=0.2]{pause_menu.png}
+                \caption{Menu \textsl{Pause}}
+            \end{figure}
             \begin{enumerate}
                 \item \button{Resume}: Permet de reprendre la course.
                 \item \button{Retry}: Relance la course depuis le début.
@@ -207,8 +230,6 @@
             \item \textbf{Lancer} le jeu.
             \item \textbf{Gagner}!
         \end{enumerate}
-
-    \clearpage
     \section{Lancer une partie en mode \textsl{Multiplayer}}
         \subsection{Pour créer une partie}
             \begin{enumerate}
